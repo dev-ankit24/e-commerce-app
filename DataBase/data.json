@@ -1,0 +1,1192 @@
+{
+  "maincategory": [
+    {
+      "id": "5e6e",
+      "name": "Male",
+      "active": true
+    },
+    {
+      "id": "c15a",
+      "name": "Female",
+      "active": true
+    },
+    {
+      "id": "dc9d",
+      "name": "Kids",
+      "active": true
+    },
+    {
+      "id": "7eb3",
+      "name": "Electronics",
+      "active": true
+    }
+  ],
+  "subcategory": [
+    {
+      "id": "14fb",
+      "name": "Shrit",
+      "active": true
+    },
+    {
+      "id": "c7ca",
+      "name": "Jense for Boys",
+      "active": true
+    },
+    {
+      "id": "470f",
+      "name": "T-Shirt",
+      "active": true
+    },
+    {
+      "id": "c6af",
+      "name": "Lower",
+      "active": true
+    },
+    {
+      "id": "53e2",
+      "name": "Shoes for girls",
+      "active": true
+    },
+    {
+      "id": "1218",
+      "name": "Shoes for Boys",
+      "active": true
+    },
+    {
+      "id": "367c",
+      "name": "Lahga",
+      "active": true
+    },
+    {
+      "id": "22f6",
+      "name": "Suit",
+      "active": true
+    },
+    {
+      "id": "2933",
+      "name": "Plaza",
+      "active": true
+    },
+    {
+      "id": "d320",
+      "name": "Sadi",
+      "active": true
+    },
+    {
+      "id": "fd6c",
+      "name": "Printer",
+      "active": true
+    },
+    {
+      "id": "771f",
+      "name": "Mobile",
+      "active": true
+    },
+    {
+      "id": "2369",
+      "name": "Smart TV",
+      "active": true
+    },
+    {
+      "id": "b412",
+      "name": "Smart Watch ",
+      "active": true
+    },
+    {
+      "id": "a595",
+      "name": "EarBugs",
+      "active": true
+    }
+  ],
+  "brand": [
+    {
+      "id": "71ea",
+      "name": "Zara",
+      "pic": "/brands/zara.png",
+      "active": false
+    },
+    {
+      "id": "f080",
+      "name": "Nike",
+      "pic": "/brands/nice.png",
+      "active": true
+    },
+    {
+      "id": "3eca",
+      "name": "Adidas",
+      "pic": "/brands/adidas.png",
+      "active": true
+    },
+    {
+      "id": "235b",
+      "name": "Boss",
+      "pic": "/brands/Boss.png",
+      "active": true
+    },
+    {
+      "id": "eba8",
+      "name": "Tommy",
+      "pic": "/brands/tommy.png",
+      "active": true
+    },
+    {
+      "id": "8af9",
+      "name": "i-Phone",
+      "pic": "/brands/i12.webp",
+      "active": true
+    },
+    {
+      "id": "9100",
+      "name": "HP.",
+      "pic": "/brands/e6.webp",
+      "active": true
+    },
+    {
+      "id": "0de5",
+      "name": "Realme",
+      "pic": "/brands/i8.webp",
+      "active": true
+    },
+    {
+      "id": "3e53",
+      "name": "samsung",
+      "pic": "/brands/i14.webp",
+      "active": true
+    }
+  ],
+  "product": [
+    {
+      "id": "f457",
+      "name": "Male shirt  and boy ",
+      "maincategory": "Male",
+      "subcategory": "Shrit",
+      "brand": "Adidas",
+      "color": "white",
+      "size": "Xl",
+      "basePrice": 498,
+      "finalPrice": 448,
+      "discount": 10,
+      "stock": "false",
+      "quantity": 20,
+      "description": "<p>\n\n</p>\r\n\n\r\n<h3 class=\"product-facts-title\" style=\" padding: 4px 0px 14px; text-rendering: optimizelegibility; font-weight: 700; font-size: 18px; line-height: 24px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255)\">About this item</h3>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Care Instructions: Hand Wash Only</span></li></ul>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Fit Type: Relaxed</span></li></ul>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Fabric: Cotton; Length: Calf Length</span></li></ul>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Style: Anarkali Kurti</span></li></ul>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Dual zipper is a great feature making it highly convenient, discreet &amp; easily accessible for breastfeeding access</span></li></ul>\r\n\n\r\n<hr aria-hidden=\"true\" class=\"a-spacing-base a-spacing-top-base a-divider-normal\" style=\" background-color: rgb(255, 255, 255); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(187, 191, 191); display: block; height: 1px; line-height: 19px; margin-bottom: 12px !important; margin-top: 12px !important; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px\" />",
+      "pic": [
+        "/products/m7.webp",
+        "/products/m1.webp",
+        "/products/m2.webp",
+        "/products/m3.webp",
+        "/products/m4.webp",
+        "/products/m5.webp",
+        "/products/m6.webp",
+        "/products/m7.webp",
+        "/products/m8.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "6424",
+      "name": "Male Jeans for boy",
+      "maincategory": "Male",
+      "subcategory": "T-Shirt",
+      "brand": "Nike",
+      "color": "black ",
+      "size": "32",
+      "basePrice": 326,
+      "finalPrice": 290,
+      "discount": 11,
+      "stock": "false",
+      "quantity": 305,
+      "description": "<p>hello&nbsp;&nbsp;</p>",
+      "pic": [
+        "/products/m3.webp",
+        "/products/m3.webp"
+      ],
+      "active": false
+    },
+    {
+      "id": "14f2",
+      "name": "T-Shirt For boy",
+      "maincategory": "Male",
+      "subcategory": "T-Shirt",
+      "brand": "Adidas",
+      "color": "purpule",
+      "size": "32",
+      "basePrice": 310,
+      "finalPrice": 279,
+      "discount": 10,
+      "stock": "true",
+      "quantity": 20,
+      "description": "<p>hello testf</p>",
+      "pic": [
+        "/products/m8.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "1",
+      "name": "T-Shirt For boy ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "basePrice": 450,
+      "finalPrice": 410,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 24,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/i9.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "2",
+      "name": "Shirt For boy ",
+      "maincategory": "Male",
+      "subcategory": "Shrit",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "basePrice": 470,
+      "finalPrice": 430,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 24,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/m1.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "3",
+      "name": "T-Shirt For men ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "basePrice": 750,
+      "finalPrice": 610,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 24,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/m3.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "4",
+      "name": "T-Shirt For men ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Zara",
+      "color": "White",
+      "size": "23",
+      "basePrice": 475,
+      "finalPrice": 420,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 24,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/m2.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "5",
+      "name": "T-Shirt For Men ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Boss",
+      "color": "White",
+      "size": "23",
+      "basePrice": 450,
+      "finalPrice": 410,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 454,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/m4.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "6",
+      "name": "T-Shirt For Men ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Nike",
+      "color": "Red",
+      "size": "23",
+      "basePrice": 220,
+      "finalPrice": 210,
+      "discount": 5,
+      "stock": "false",
+      "quantity": 24,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/m6.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "7",
+      "name": "T-Shirt For boy ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "basePrice": 199,
+      "finalPrice": 199,
+      "discount": 0,
+      "stock": "false",
+      "quantity": 240,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/m5.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "8",
+      "name": "T-Shirt For boy ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Nike",
+      "color": "Mixed",
+      "size": "23",
+      "basePrice": 320,
+      "finalPrice": 320,
+      "discount": 0,
+      "stock": "false",
+      "quantity": 204,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/m7.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "9",
+      "name": "T-Shirt For boy ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "basePrice": 450,
+      "finalPrice": 410,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 24,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/i9.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "10",
+      "name": "T-Shirt For boy ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "basePrice": 450,
+      "finalPrice": 410,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 24,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/m8.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "1",
+      "name": "T-Shirt For boy ",
+      "maincategory": "Male",
+      "subcategory": "T-Shrit",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "basePrice": 450,
+      "finalPrice": 410,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 24,
+      "description": "<p>hello test</p>",
+      "pic": [
+        "/products/i9.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "fd02",
+      "name": "Lahga for female",
+      "maincategory": "Female",
+      "subcategory": "Lahga",
+      "brand": "Adidas",
+      "color": "cremy",
+      "size": "32",
+      "basePrice": 1250,
+      "finalPrice": 1100,
+      "discount": 12,
+      "stock": true,
+      "quantity": 150,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/c1.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "ec28",
+      "name": "Suit for girls",
+      "maincategory": "Female",
+      "subcategory": "Suit",
+      "brand": "Boss",
+      "color": "Bringlely",
+      "size": "28",
+      "basePrice": 1570,
+      "finalPrice": 1460,
+      "discount": 7,
+      "stock": "false",
+      "quantity": 120,
+      "description": "<p>good product</p>",
+      "pic": [
+        "/products/c2.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "8dca",
+      "name": "Lahga for female",
+      "maincategory": "Female",
+      "subcategory": "Lahga",
+      "brand": "Tommy",
+      "color": "Almond",
+      "size": "32",
+      "basePrice": 1578,
+      "finalPrice": 1420,
+      "discount": 10,
+      "stock": "false",
+      "quantity": 104,
+      "description": "<p>good product&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+      "pic": [
+        "/products/c3.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "8c9b",
+      "name": "Lahga  chunni for female",
+      "maincategory": "Female",
+      "subcategory": "Lahga",
+      "brand": "Nike",
+      "color": "gerrn",
+      "size": "29",
+      "basePrice": 1275,
+      "finalPrice": 1173,
+      "discount": 8,
+      "stock": true,
+      "quantity": 74,
+      "description": "<p>good product&nbsp;</p>",
+      "pic": [
+        "/products/c4.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "e9fb",
+      "name": "Lahga  and suit for female",
+      "maincategory": "Female",
+      "subcategory": "Suit",
+      "brand": "Zara",
+      "color": "white and red",
+      "size": "28",
+      "basePrice": 1782,
+      "finalPrice": 1532,
+      "discount": 14,
+      "stock": true,
+      "quantity": 104,
+      "description": "<p>good product</p>",
+      "pic": [
+        "/products/c5.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "db63",
+      "name": "Lahga for female",
+      "maincategory": "Female",
+      "subcategory": "Lahga",
+      "brand": "Nike",
+      "color": "pink",
+      "size": "30",
+      "basePrice": 1400,
+      "finalPrice": 1190,
+      "discount": 15,
+      "stock": "false",
+      "quantity": 140,
+      "description": "<p>good product&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+      "pic": [
+        "/products/c6.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "039e",
+      "name": "Plaza for women",
+      "maincategory": "Female",
+      "subcategory": "Plaza",
+      "brand": "Adidas",
+      "color": "goldy",
+      "size": "32",
+      "basePrice": 210,
+      "finalPrice": 178,
+      "discount": 15,
+      "stock": "false",
+      "quantity": 178,
+      "description": "<p>good product</p>",
+      "pic": [
+        "/products/c7.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "5dd7",
+      "name": "Plaza for women And Girls",
+      "maincategory": "Female",
+      "subcategory": "Plaza",
+      "brand": "Nike",
+      "color": "Green",
+      "size": "28",
+      "basePrice": 280,
+      "finalPrice": 232,
+      "discount": 17,
+      "stock": "false",
+      "quantity": 145,
+      "description": "<p>good product&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+      "pic": [
+        "/products/c8.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "0811",
+      "name": "Lahga for female",
+      "maincategory": "Female",
+      "subcategory": "Lahga",
+      "brand": "Zara",
+      "color": "cremy",
+      "size": "32",
+      "basePrice": 1870,
+      "finalPrice": 1645,
+      "discount": 12,
+      "stock": true,
+      "quantity": 195,
+      "description": "<p>good product</p>",
+      "pic": [
+        "/products/c1.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "cf7a",
+      "name": "Suit for girls",
+      "maincategory": "Female",
+      "subcategory": "Suit",
+      "brand": "Nike",
+      "color": "green",
+      "size": "32",
+      "basePrice": 299,
+      "finalPrice": 275,
+      "discount": 8,
+      "stock": "false",
+      "quantity": 189,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/c2.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "bdb7",
+      "name": "hp printer",
+      "maincategory": "Electronics",
+      "subcategory": "Printer",
+      "brand": "HP.",
+      "color": "black",
+      "size": "32",
+      "basePrice": 8000,
+      "finalPrice": 7680,
+      "discount": 4,
+      "stock": true,
+      "quantity": 450,
+      "description": "<p>good printer</p>",
+      "pic": [
+        "/products/e2.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "aa50",
+      "name": "hp inkjet printer ",
+      "maincategory": "Electronics",
+      "subcategory": "Printer",
+      "brand": "HP.",
+      "color": "black",
+      "size": "32",
+      "basePrice": 7852,
+      "finalPrice": 7537,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 14,
+      "description": "<p><ul><li><span style=\"font-weight: 700;\">This printer 1 minutes 100 pages print.</span></li><li><span style=\"font-weight: 700;\">This printer very low ink used.</span></li><li><span style=\"font-weight: 700;\">This printer&nbsp; very low electricity used</span></li></ul></p>",
+      "pic": [
+        "/products/e3.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "4b7f",
+      "name": "hp inkjet printer ",
+      "maincategory": "Electronics",
+      "subcategory": "Printer",
+      "brand": "HP.",
+      "color": "white",
+      "size": "32",
+      "basePrice": 10014,
+      "finalPrice": 9012,
+      "discount": 10,
+      "stock": true,
+      "quantity": 187,
+      "description": "<p>\n\n<ul style=\" color: rgb(65, 65, 65); font-size: 14px\"><li><span style=\" font-weight: 700\">This printer 1 minutes 100 pages print.</span></li><li><span style=\" font-weight: 700\">This printer very low ink used.</span></li><li><span style=\" font-weight: 700\">This printer&nbsp; very low electricity used</span></li></ul>\n<br /></p>",
+      "pic": [
+        "/products/e6.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "21d9",
+      "name": "hp printer",
+      "maincategory": "Electronics",
+      "subcategory": "Printer",
+      "brand": "HP.",
+      "color": "white and black",
+      "size": "32",
+      "basePrice": 18795,
+      "finalPrice": 15975,
+      "discount": 15,
+      "stock": true,
+      "quantity": 12,
+      "description": "<p>\n\n<ul style=\" color: rgb(65, 65, 65); font-size: 14px\"><li><span style=\" font-weight: 700\">This printer 1 minutes 100 pages print.</span></li><li><span style=\" font-weight: 700\">This printer very low ink used.</span></li><li><span style=\" font-weight: 700\">This printer&nbsp; very low electricity used</span></li></ul>\n<br /></p>",
+      "pic": [
+        "/products/e7.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "7828",
+      "name": "hp printer",
+      "maincategory": "Electronics",
+      "subcategory": "Printer",
+      "brand": "HP.",
+      "color": "white",
+      "size": "32",
+      "basePrice": 9547,
+      "finalPrice": 8210,
+      "discount": 14,
+      "stock": "false",
+      "quantity": 14,
+      "description": "<p>\n\n<ul style=\" color: rgb(65, 65, 65); font-size: 14px\"><li><span style=\" font-weight: 700\">This printer 1 minutes 100 pages print.</span></li><li><span style=\" font-weight: 700\">This printer very low ink used.</span></li><li><span style=\" font-weight: 700\">This printer&nbsp; very low electricity used</span></li></ul>\n<br /></p>",
+      "pic": [
+        "/products/e9.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "9d1b",
+      "name": "hp inkjet printer ",
+      "maincategory": "Electronics",
+      "subcategory": "Printer",
+      "brand": "HP.",
+      "color": "black",
+      "size": "32",
+      "basePrice": 7854,
+      "finalPrice": 7461,
+      "discount": 5,
+      "stock": true,
+      "quantity": 105,
+      "description": "<p>\n\n<ul style=\" color: rgb(65, 65, 65); font-size: 14px\"><li><span style=\" font-weight: 700\">This printer 1 minutes 100 pages print.</span></li><li><span style=\" font-weight: 700\">This printer very low ink used.</span></li><li><span style=\" font-weight: 700\">This printer&nbsp; very low electricity used</span></li></ul>\n<br /></p>",
+      "pic": [
+        "/products/e5.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "3930",
+      "name": "Shirt for Kids",
+      "maincategory": "Kids",
+      "subcategory": "Shrit",
+      "brand": "Boss",
+      "color": "black",
+      "size": "20",
+      "basePrice": 780,
+      "finalPrice": 670,
+      "discount": 14,
+      "stock": "false",
+      "quantity": 120,
+      "description": "<p>good&nbsp;</p>",
+      "pic": [
+        "/products/m8.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "39f4",
+      "name": "i-Phone 15 pro max",
+      "maincategory": "Electronics",
+      "subcategory": "Mobile",
+      "brand": "i-Phone",
+      "color": "gold",
+      "size": "15.5",
+      "basePrice": 147001,
+      "finalPrice": 132300,
+      "discount": 10,
+      "stock": true,
+      "quantity": 15,
+      "description": "<p>good phione&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+      "pic": [
+        "/products/i11.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "8553",
+      "name": "i-Phone 15 pro max (black)",
+      "maincategory": "Electronics",
+      "subcategory": "Mobile",
+      "brand": "i-Phone",
+      "color": "black",
+      "size": "15.5cm",
+      "basePrice": 115499,
+      "finalPrice": 109724,
+      "discount": 5,
+      "stock": true,
+      "quantity": 45,
+      "description": "good",
+      "pic": [
+        "/products/i13.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "0aea",
+      "name": "i-Phone 15 pro ",
+      "maincategory": "Electronics",
+      "subcategory": "Mobile",
+      "brand": "i-Phone",
+      "color": "Navy",
+      "size": "15.5cm",
+      "basePrice": 145552,
+      "finalPrice": 135363,
+      "discount": 7,
+      "stock": true,
+      "quantity": 13,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/i12.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "8176",
+      "name": "Samsung Galaxy A30 5G",
+      "maincategory": "Electronics",
+      "subcategory": "Mobile",
+      "brand": "samsung",
+      "color": "white",
+      "size": "14.5cm",
+      "basePrice": 35744,
+      "finalPrice": 31812,
+      "discount": 11,
+      "stock": true,
+      "quantity": 354,
+      "description": "<h2>MyTitleMyTitleMyTitle</h2>\r\n<p>Paragraph 1 </p>\r\n<p>Paragraph 2 </p>\r\n<p>Paragraph 3 </p>\r\n<p>Paragraph 4 </p>\r\n<p>Paragraph 5 </p>",
+      "pic": [
+        "/products/i15.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "3140",
+      "name": "Realme Smart Watch ",
+      "maincategory": "Electronics",
+      "subcategory": "Smart Watch ",
+      "brand": "Realme",
+      "color": "black",
+      "size": "12",
+      "basePrice": 1754,
+      "finalPrice": 1666,
+      "discount": 5,
+      "stock": "false",
+      "quantity": 1,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/i5.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "c8cc",
+      "name": "Laptop  hp i7 gen9 ",
+      "maincategory": "Electronics",
+      "subcategory": "Mobile",
+      "brand": "HP.",
+      "color": "black",
+      "size": "20cm",
+      "basePrice": 45785,
+      "finalPrice": 41664,
+      "discount": 9,
+      "stock": true,
+      "quantity": 2,
+      "description": "<p>good laptop&nbsp;&nbsp;&nbsp;&nbsp;</p>",
+      "pic": [
+        "/products/i16.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "a234",
+      "name": "Samsung Smart TV LED",
+      "maincategory": "Electronics",
+      "subcategory": "Smart TV",
+      "brand": "samsung",
+      "color": "black",
+      "size": "32",
+      "basePrice": 27541,
+      "finalPrice": 23409,
+      "discount": 15,
+      "stock": "false",
+      "quantity": 45,
+      "description": "<p>good led tv</p>",
+      "pic": [
+        "/products/i19.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "faa7",
+      "name": "Sony Cemra  DSLR",
+      "maincategory": "Electronics",
+      "subcategory": "Smart TV",
+      "brand": "HP.",
+      "color": "black",
+      "size": "32",
+      "basePrice": 35420,
+      "finalPrice": 31169,
+      "discount": 12,
+      "stock": "false",
+      "quantity": 41,
+      "description": "<p>good cemra</p>",
+      "pic": [
+        "/products/ii4.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "90a9",
+      "name": "T-Shirt for Kids",
+      "maincategory": "Kids",
+      "subcategory": "T-Shirt",
+      "brand": "Nike",
+      "color": "gary",
+      "size": "26",
+      "basePrice": 250,
+      "finalPrice": 240,
+      "discount": 4,
+      "stock": "false",
+      "quantity": 114,
+      "description": "<p>good T-shirt</p>",
+      "pic": [
+        "/products/m1.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "6912",
+      "name": "Lower for Kids ",
+      "maincategory": "Kids",
+      "subcategory": "Jense for Boys",
+      "brand": "Nike",
+      "color": "purpule",
+      "size": "20",
+      "basePrice": 350,
+      "finalPrice": 297,
+      "discount": 15,
+      "stock": "false",
+      "quantity": 333,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/m2.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "f141",
+      "name": "Shirt for kids",
+      "maincategory": "Kids",
+      "subcategory": "T-Shirt",
+      "brand": "Nike",
+      "color": "green",
+      "size": "11",
+      "basePrice": 250,
+      "finalPrice": 220,
+      "discount": 12,
+      "stock": "false",
+      "quantity": 45,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/m7.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "dd4d",
+      "name": " T-shirt for kids",
+      "maincategory": "Kids",
+      "subcategory": "Jense for Boys",
+      "brand": "Nike",
+      "color": "black",
+      "size": "20",
+      "basePrice": 352,
+      "finalPrice": 309,
+      "discount": 12,
+      "stock": "false",
+      "quantity": 44,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/m6.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "bf75",
+      "name": "Samsung F30A",
+      "maincategory": "Electronics",
+      "subcategory": "Mobile",
+      "brand": "samsung",
+      "color": "SILVER",
+      "size": "14.25m",
+      "basePrice": 17540,
+      "finalPrice": 15435,
+      "discount": 12,
+      "stock": true,
+      "quantity": 55,
+      "description": "<p>good phone</p>",
+      "pic": [
+        "/products/i14.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "346e",
+      "name": "Lahga  chunni for female",
+      "maincategory": "Female",
+      "subcategory": "Lahga",
+      "brand": "Nike",
+      "color": "red",
+      "size": "35",
+      "basePrice": 1750,
+      "finalPrice": 1627,
+      "discount": 7,
+      "stock": true,
+      "quantity": 54,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/c6.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "e10c",
+      "name": "Plaza for women And Girls",
+      "maincategory": "Female",
+      "subcategory": "Plaza",
+      "brand": "Zara",
+      "color": "green",
+      "size": "32",
+      "basePrice": 250,
+      "finalPrice": 237,
+      "discount": 5,
+      "stock": true,
+      "quantity": 21,
+      "description": "<p>gppp</p>",
+      "pic": [
+        "/products/c8.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "1c3f",
+      "name": "Shirt for men",
+      "maincategory": "Male",
+      "subcategory": "Shrit",
+      "brand": "Zara",
+      "color": "white black",
+      "size": "2xl",
+      "basePrice": 750,
+      "finalPrice": 675,
+      "discount": 10,
+      "stock": true,
+      "quantity": 12,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/i10.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "2749",
+      "name": "T-shirt for men",
+      "maincategory": "Male",
+      "subcategory": "T-Shirt",
+      "brand": "Tommy",
+      "color": "white",
+      "size": "xxl",
+      "basePrice": 959,
+      "finalPrice": 843,
+      "discount": 12,
+      "stock": true,
+      "quantity": 42,
+      "description": "<p>good</p>",
+      "pic": [
+        "/products/i9.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "99af",
+      "name": "shirt for male",
+      "maincategory": "Male",
+      "subcategory": "Shrit",
+      "brand": "Zara",
+      "color": "red",
+      "size": "23",
+      "basePrice": 398,
+      "finalPrice": 382,
+      "discount": 4,
+      "stock": false,
+      "quantity": 20,
+      "description": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></p>",
+      "pic": [
+        "/products/m2.webp",
+        "/products/m3.webp",
+        "/products/m4.webp"
+      ],
+      "active": true
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "89f3",
+      "name": "Cristian Dema",
+      "pic": "/testimonials/p4.jfif",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "active": true
+    },
+    {
+      "id": "b39c",
+      "name": "Crintian Yashita",
+      "pic": "/testimonials/p3.jfif",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "active": true
+    },
+    {
+      "id": "0051",
+      "name": "Sneha Rani",
+      "pic": "/testimonials/p1.jfif",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "active": true
+    },
+    {
+      "id": "cc09",
+      "name": "John Sons",
+      "pic": "/testimonials/p2.jfif",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt.Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt.Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt.Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt.Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "active": true
+    },
+    {
+      "id": "013d",
+      "name": "Ananya  Pandey",
+      "pic": "/testimonials/p5.jfif",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "active": true
+    }
+  ],
+  "user": [
+    {
+      "name": "Ankit Kumar",
+      "phone": "8392823395",
+      "address": "",
+      "city": "",
+      "pin": "",
+      "state": "",
+      "pic": "/products/ankit.jpg",
+      "id": "bea0"
+    },
+    {
+      "name": "Anuj Kumar",
+      "phone": "9720165750",
+      "address": "H.No.423, Vill- Chandiyana Rampur , Post- Rampur Chandiyana ,\ntehsil- Atrauli  Dist- Aligarh",
+      "city": "Aligarh",
+      "pin": "202133",
+      "state": "Uttar Pradesh",
+      "pic": "/products/anuj.jpg",
+      "id": "ae18",
+      "username": "Anuj",
+      "email": "abc@gmail.com",
+      "password": "Anuj@123",
+      "role": "Buyer"
+    },
+    {
+      "id": "2179",
+      "name": "Parmanad",
+      "username": "Parmanad",
+      "email": "asdf4@gamil.com",
+      "phone": "9875632410",
+      "password": "Pkjha@123",
+      "role": "Buyer"
+    },
+    {
+      "name": "Ankit Kumar",
+      "phone": "8392823395",
+      "address": "",
+      "city": "",
+      "pin": "",
+      "state": "",
+      "pic": "/products/ankit.jpg",
+      "id": "e854",
+      "username": "devankit",
+      "email": "ankitkumar839282@gmail.com",
+      "password": "Ankit@123",
+      "role": "Admin"
+    }
+  ],
+  "wishlist": [],
+  "checkout": [],
+  "newsletter": [],
+  "contact": [],
+  "cart": []
+}
