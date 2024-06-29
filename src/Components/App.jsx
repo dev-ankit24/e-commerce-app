@@ -38,6 +38,8 @@ import SignUp from "./SignUp";
 import Login from "./Login";
 import Profile from "./Profile";
 import UpdateProfile from "./UpdateProfile";
+import Cart from "./Cart";
+import Checkout from "./Checkout";
 
 export default function App() {
   return (
@@ -52,6 +54,8 @@ export default function App() {
               <Route path='/products/:id' element={<Products/>}/>
               <Route path='/signup' element={<SignUp/>}/>
               <Route path='/login' element={<Login/>}/>
+              <Route path='/cart' element={<Cart/>}/>
+              <Route path='/checkout' element={<Checkout/>}/>
               
               {/* Buyer routes.(user) */}
               <Route path='/profile' element={<Profile/>}/>

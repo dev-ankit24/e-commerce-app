@@ -195,7 +195,7 @@ export default function AdminCreateProduct() {
                     </div>
 
                     <div className="col-md-3 col-sm-6 mb-3">
-                       <label >Stock</label>
+                       <label >Stock*</label>
                        <select name="stock"   onChange={getInputData} className="form-select ">
                         <option value="true">In Stock</option>
                         <option value="false">Out of Stock</option>

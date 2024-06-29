@@ -5,7 +5,7 @@ function ProfileTable(props) {
   return (
     <>
          <h5 className='bg-primary text-center p-2 text-light '>{props.title}</h5>
-         <table className='table table-bordered'>
+         <table className='table table-bordered border-primary'>
          <tbody >
           <tr>
             <th>Name</th>

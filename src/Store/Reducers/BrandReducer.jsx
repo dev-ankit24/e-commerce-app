@@ -19,9 +19,8 @@ let newState, index
             return state
         
         case DELETE_BRAND_RED:
-            index=state.findIndex((x)=> x.id === action.payload.id)
-            newState=state.filter((x)=> x.id !== action.payload.id)
-            return newState
+            return state.filter((x)=> x.id !== action.payload.id)
+
         
         default :
             return state

@@ -2,17 +2,63 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { getProduct } from '../Store/ActionCreators/ProductActionCreators'
+import {getCart, createCart} from '../Store/ActionCreators/CartActionCreators'
+import { createWishlist, getWishlist } from '../Store/ActionCreators/WishlistActionCreators'
 import  Product     from  '../Components/Partials/Product'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 export default function Products() {
   let {id}=useParams()
   let [product,setProduct]=useState({})
   let [relatedProduct,setRelatedProduct]= useState([]);
+  let navigate= useNavigate()
   let [qty,setQty]=useState(1)
 
   let dispatch =useDispatch()
   let ProductStateData= useSelector((state)=>state.ProductStateData)
+  let CartStateData =useSelector((state=>state.CartStateData))
+  let WishlistStateData = useSelector((state=>state.WishlistStateData))
+   
+  // Product add to card
+ function addToCart(){
+  let item = CartStateData.find((x)=>x.user===localStorage.getItem("userid") && x.product===id)
+  if(!item){
+    item={
+      user:localStorage.getItem("userid"),
+      name:product.name,
+      product:product.id,
+      brand:product.brand,
+      color:product.color,
+      size:product.size,
+      pic:product.pic[0],
+      price:product.finalPrice,
+      qty:qty,
+      total :product.finalPrice*qty
+    }
+    dispatch(createCart(item))
+  }
+  navigate("/cart")
+ }
+// Product add to wishlist
+ function addToWishlist(){
+  let item = WishlistStateData.find((x)=>x.user===localStorage.getItem("userid") && x.product===id)
+  if(!item){
+    item={
+      user:localStorage.getItem("userid"),
+      name:product.name,
+      product:product.id,
+      brand:product.brand,
+      color:product.color,
+      size:product.size,
+      pic:product.pic[0],
+      price:product.finalPrice,
+    
+    }
+    dispatch(createWishlist(item))
+  }
+  navigate("/profile")
+ }
+
 
   useEffect(()=>{
     (()=>{
@@ -25,6 +71,19 @@ export default function Products() {
       
     })()
   }, [ProductStateData.length,id])
+
+  useEffect(()=>{
+    (()=>{
+      dispatch(getCart())  
+    })()
+  }, [CartStateData.length])
+
+  useEffect(()=>{
+    (()=>{
+      dispatch(getWishlist())  
+    })()
+  }, [WishlistStateData.length])
+  
   return (
        <>
        <div className="container-fluid">
@@ -37,7 +96,7 @@ export default function Products() {
                 </div>
                 {
                   product.pic && product.pic.slice(1).map((item,index)=>{
-                    return <div class="carousel-item" >
+                    return <div class="carousel-item" key={index} >
                           <img src={item} style={{height:550, width:"100%"}} class="d-block w-100" alt="..."/>
 
                   </div>
@@ -82,7 +141,15 @@ export default function Products() {
                 </tr>
                 <tr>
                   <th>Stock</th>
-                  <td><strong>{product.quantity} </strong> Quanity Left In Stock</td>
+                  <td>{product.stock ?
+                     <> <strong>{product.quantity} Quanity Left In Stock  </strong> </>
+                     :
+                     <p>   
+                     Out of Stock
+                    </p>
+                    
+                     }
+                </td>
                 </tr>
                 <tr>
                   <th colSpan={2}>
@@ -95,11 +162,11 @@ export default function Products() {
                       <button className='btn btn-primary'><i className='fa fa-plus' onClick={()=>qty<product.quantity?setQty(qty+1):""}></i></button>
                     </p>
                     <div className="btn-group">
-                      <button className='btn btn-primary'><i className='fa fa-shopping-cart'></i> Add To Cart</button>
-                      <button className='btn btn-warning  mx-3'><i className='fa fa-heart text-danger fs-4'></i> Add To Wishlist</button>
+                      <button className='btn btn-primary' onClick={addToCart}><i className='fa fa-shopping-cart'></i> Add To Cart</button>
+                      <button className='btn btn-warning  mx-3' onClick={addToWishlist}><i className='fa fa-heart text-danger fs-4'></i> Add To Wishlist</button>
                     </div>
                     </>:
-                      <button className='btn btn-warning  mx-3'><i className='fa fa-heart text-danger fs-4'></i> Add To Wishlist</button>
+                      <button className='btn btn-warning  mx-3' ><i className='fa fa-heart text-danger fs-4'></i> Add To Wishlist</button>
 
                    }
 

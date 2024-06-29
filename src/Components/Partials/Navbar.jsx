@@ -98,7 +98,7 @@ function logout(){
                   <>
                   <Link to="/profile" className="dropdown-item">Profile     <i class="fa fa-user"></i></Link>
                  <Link to="/cart" className="dropdown-item">Cart </Link>
-                 <Link to="/chekout" className="dropdown-item">Checkout <i class="fa fa-check"></i> </Link>
+                 <Link to="/checkout" className="dropdown-item">Checkout <i class="fa fa-check"></i> </Link>
                   </>:
                   <Link to="/admin" className="dropdown-item">Profile     <i class="fa fa-user"></i></Link>
                 }

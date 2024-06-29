@@ -1080,20 +1080,21 @@
       "id": "99af",
       "name": "shirt for male",
       "maincategory": "Male",
-      "subcategory": "Shrit",
+      "subcategory": "T-Shirt",
       "brand": "Zara",
       "color": "red",
-      "size": "23",
-      "basePrice": 398,
-      "finalPrice": 382,
+      "size": "32",
+      "basePrice": 321,
+      "finalPrice": 308,
       "discount": 4,
       "stock": false,
-      "quantity": 20,
-      "description": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></p>",
+      "quantity": 0,
+      "description": "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></p>",
       "pic": [
         "/products/m2.webp",
         "/products/m3.webp",
-        "/products/m4.webp"
+        "/products/m2.webp",
+        "/products/m2.webp"
       ],
       "active": true
     }
@@ -1184,9 +1185,149 @@
       "role": "Admin"
     }
   ],
-  "wishlist": [],
+  "wishlist": [
+    {
+      "id": "9930",
+      "user": "e854",
+      "name": "Sony Cemra  DSLR",
+      "product": "faa7",
+      "brand": "HP.",
+      "color": "black",
+      "size": "32",
+      "pic": "/products/ii4.webp",
+      "price": 31169
+    },
+    {
+      "id": "73c1",
+      "user": "ae18",
+      "name": "T-Shirt For boy",
+      "product": "14f2",
+      "brand": "Adidas",
+      "color": "purpule",
+      "size": "32",
+      "pic": "/products/m8.webp",
+      "price": 279
+    }
+  ],
   "checkout": [],
   "newsletter": [],
   "contact": [],
-  "cart": []
+  "cart": [
+    {
+      "id": "56d1",
+      "user": "e854",
+      "name": "Shirt For boy ",
+      "product": "2",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "price": 430,
+      "qty": 1,
+      "total": 430
+    },
+    {
+      "id": "e804",
+      "user": "e854",
+      "name": "T-Shirt For boy",
+      "product": "14f2",
+      "brand": "Adidas",
+      "color": "purpule",
+      "size": "32",
+      "pic": "/products/m8.webp",
+      "price": 279,
+      "qty": 1,
+      "total": 279
+    },
+    {
+      "id": "3d3c",
+      "user": "e854",
+      "name": "T-Shirt For boy ",
+      "product": "8",
+      "brand": "Nike",
+      "color": "Mixed",
+      "size": "23",
+      "pic": "/products/m7.webp",
+      "price": 320,
+      "qty": 10,
+      "total": 3200
+    },
+    {
+      "id": "36f1",
+      "user": "e854",
+      "name": "Sony Cemra  DSLR",
+      "product": "faa7",
+      "brand": "HP.",
+      "color": "black",
+      "size": "32",
+      "pic": "/products/ii4.webp",
+      "price": 31169,
+      "qty": 1,
+      "total": 31169
+    },
+    {
+      "id": "516d",
+      "user": "ae18",
+      "name": "T-Shirt For men ",
+      "product": "4",
+      "brand": "Zara",
+      "color": "White",
+      "size": "23",
+      "pic": "/products/m2.webp",
+      "price": 420,
+      "qty": 10,
+      "total": 4200
+    },
+    {
+      "id": "3f58",
+      "user": "ae18",
+      "name": "T-Shirt For boy ",
+      "product": "1",
+      "brand": "Nike",
+      "color": "White",
+      "size": "23",
+      "pic": "/products/i9.webp",
+      "price": 410,
+      "qty": 1,
+      "total": 410
+    },
+    {
+      "id": "e7cc",
+      "user": "ae18",
+      "name": "Sony Cemra  DSLR",
+      "product": "faa7",
+      "brand": "HP.",
+      "color": "black",
+      "size": "32",
+      "pic": "/products/ii4.webp",
+      "price": 31169,
+      "qty": 1,
+      "total": 31169
+    },
+    {
+      "id": "fb9d",
+      "user": null,
+      "name": "T-Shirt For boy",
+      "product": "14f2",
+      "brand": "Adidas",
+      "color": "purpule",
+      "size": "32",
+      "pic": "/products/m8.webp",
+      "price": 279,
+      "qty": 13,
+      "total": 3627
+    },
+    {
+      "id": "d94b",
+      "user": null,
+      "name": "T-Shirt For Men ",
+      "product": "5",
+      "brand": "Boss",
+      "color": "White",
+      "size": "23",
+      "pic": "/products/m4.webp",
+      "price": 410,
+      "qty": 10,
+      "total": 4100
+    }
+  ]
 }
