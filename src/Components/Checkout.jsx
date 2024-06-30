@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getCart } from '../Store/ActionCreators/CartActionCreators'
+import {createCheckout} from "../Store/ActionCreators/CheckoutActionCreators"
 import { Link, useNavigate } from 'react-router-dom'
 import ProfileTable from './Partials/ProfileTable'
 
@@ -11,10 +12,27 @@ export default function Checkout() {
     let [shipping, setShipping]=useState(0)
     let [total , setTotal]=useState(0)
     let [cart, setCart]= useState([])
+    let [mode,setMode]=useState("COD")
 
     let dispatch =useDispatch()
     let navigate =useNavigate()
     let CartStateData =useSelector((state)=>state.CartStateData)
+
+    function placeOrder(){
+        let item={
+        oderStatus:"Order is Placed",
+        // paymentMode:mode,
+        paymentMode:"COD",
+        paymentStatus:"Pending",
+        subtotal:subtotal,
+        shipping:shipping,
+        total:total,
+        products:cart,
+        date:new Date()
+        }
+        dispatch(createCheckout())
+        navigate("/confirmation")
+    }
     
     // Get Card data  and Calcutale  Shpiiing price, total price
     useEffect(()=>{
@@ -113,8 +131,17 @@ useEffect(()=>{
                                         <th>Total</th>
                                         <td>&#8377;{total}</td>
                                      </tr>
+                                    <tr>
+                                        <th>Payment Mode</th>
+                                        <td>
+                                            <select name="mode" onChange={(e)=>setMode(e.target.value)} className='form-select'> 
+                                                <option value="COD">COD</option>
+                                                <option value="NetWorking">UPI/Netbankig/Card</option>
+                                            </select>
+                                        </td>
+                                    </tr>
                                      <tr>
-                                        <th colSpan={2}><Link to="/checkout" className='btn btn-warning w-100'>Proceed To Checkout</Link></th>
+                                        <th colSpan={2}><Link to="/confirmation" onClick={placeOrder} className='btn btn-warning w-100' >Proceed To Checkout</Link></th>
                                      </tr>
                                 </thead>
                             </table>
