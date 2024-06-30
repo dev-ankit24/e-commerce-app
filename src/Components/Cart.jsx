@@ -25,7 +25,7 @@ export default function Cart() {
     //   update quantity  and price
     function updateData(id,option){
 
-        let item=cart.find((x)=>x)
+        let item=cart.find((x)=>x.id===id)
         if(item.qty===1 && option==="DEC")
             return 
         else if(option==="DEC"){
@@ -33,8 +33,11 @@ export default function Cart() {
             item.total=item.total-item.price
         }
         else {
-            item.qty=item.qty+1
-            item.total=item.total+item.price
+            if(item.qty<item.stockQuantity){
+                item.qty=item.qty+1
+                item.total=item.total+item.price
+            }
+           
         }
         dispatch(updateCart({...item}))
         getAPIData()

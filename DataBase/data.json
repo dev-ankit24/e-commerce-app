@@ -167,7 +167,7 @@
       "finalPrice": 448,
       "discount": 10,
       "stock": "false",
-      "quantity": 20,
+      "quantity": -19,
       "description": "<p>\n\n</p>\r\n\n\r\n<h3 class=\"product-facts-title\" style=\" padding: 4px 0px 14px; text-rendering: optimizelegibility; font-weight: 700; font-size: 18px; line-height: 24px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255)\">About this item</h3>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Care Instructions: Hand Wash Only</span></li></ul>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Fit Type: Relaxed</span></li></ul>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Fabric: Cotton; Length: Calf Length</span></li></ul>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Style: Anarkali Kurti</span></li></ul>\r\n\n\r\n<ul class=\"a-unordered-list a-vertical a-spacing-small\" style=\" margin: 0px 0px 0px 18px; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255)\"><span /><li style=\" list-style: disc; overflow-wrap: break-word\"><span class=\"a-list-item a-size-base a-color-base\" style=\" font-size: 14px !important; line-height: 20px !important; color: rgb(15, 17, 17)\">Dual zipper is a great feature making it highly convenient, discreet &amp; easily accessible for breastfeeding access</span></li></ul>\r\n\n\r\n<hr aria-hidden=\"true\" class=\"a-spacing-base a-spacing-top-base a-divider-normal\" style=\" background-color: rgb(255, 255, 255); border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(187, 191, 191); display: block; height: 1px; line-height: 19px; margin-bottom: 12px !important; margin-top: 12px !important; color: rgb(15, 17, 17); font-family: &quot;Amazon Ember&quot;, Arial, sans-serif; font-size: 14px\" />",
       "pic": [
         "/products/m7.webp",
@@ -194,7 +194,7 @@
       "finalPrice": 290,
       "discount": 11,
       "stock": "false",
-      "quantity": 305,
+      "quantity": 299,
       "description": "<p>hello&nbsp;&nbsp;</p>",
       "pic": [
         "/products/m3.webp",
@@ -213,8 +213,8 @@
       "basePrice": 310,
       "finalPrice": 279,
       "discount": 10,
-      "stock": "true",
-      "quantity": 20,
+      "stock": false,
+      "quantity": 0,
       "description": "<p>hello testf</p>",
       "pic": [
         "/products/m8.webp"
@@ -1138,16 +1138,6 @@
   ],
   "user": [
     {
-      "name": "Ankit Kumar",
-      "phone": "8392823395",
-      "address": "",
-      "city": "",
-      "pin": "",
-      "state": "",
-      "pic": "/products/ankit.jpg",
-      "id": "bea0"
-    },
-    {
       "name": "Anuj Kumar",
       "phone": "9720165750",
       "address": "H.No.423, Vill- Chandiyana Rampur , Post- Rampur Chandiyana ,\ntehsil- Atrauli  Dist- Aligarh",
@@ -1185,245 +1175,192 @@
       "role": "Admin"
     }
   ],
-  "wishlist": [
-    {
-      "id": "9930",
-      "user": "e854",
-      "name": "Sony Cemra  DSLR",
-      "product": "faa7",
-      "brand": "HP.",
-      "color": "black",
-      "size": "32",
-      "pic": "/products/ii4.webp",
-      "price": 31169
-    },
-    {
-      "id": "73c1",
-      "user": "ae18",
-      "name": "T-Shirt For boy",
-      "product": "14f2",
-      "brand": "Adidas",
-      "color": "purpule",
-      "size": "32",
-      "pic": "/products/m8.webp",
-      "price": 279
-    }
-  ],
+  "wishlist": [],
   "checkout": [
     {
-      "id": "3470"
+      "id": "024d"
     },
     {
-      "id": "7386"
+      "id": "4e25",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 279,
+      "shipping": 60,
+      "total": 339,
+      "products": [
+        {
+          "id": "0de3",
+          "user": "ae18",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "32",
+          "pic": "/products/m8.webp",
+          "price": 279,
+          "qty": 1,
+          "total": 279
+        }
+      ],
+      "date": "2024-06-30T03:25:25.035Z"
     },
     {
-      "id": "9025"
+      "id": "1331",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 2519,
+      "shipping": 0,
+      "total": 2519,
+      "products": [
+        {
+          "id": "0de3",
+          "user": "ae18",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "32",
+          "pic": "/products/m8.webp",
+          "price": 279,
+          "qty": 1,
+          "total": 279
+        },
+        {
+          "id": "50e6",
+          "user": "ae18",
+          "name": "Male shirt  and boy ",
+          "product": "f457",
+          "brand": "Adidas",
+          "color": "white",
+          "size": "Xl",
+          "pic": "/products/m7.webp",
+          "price": 448,
+          "qty": 5,
+          "total": 2240
+        }
+      ],
+      "date": "2024-06-30T05:14:42.633Z"
     },
     {
-      "id": "197a"
+      "id": "6dac",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 15232,
+      "shipping": 0,
+      "total": 15232,
+      "products": [
+        {
+          "id": "50e6",
+          "user": "ae18",
+          "name": "Male shirt  and boy ",
+          "product": "f457",
+          "brand": "Adidas",
+          "color": "white",
+          "size": "Xl",
+          "pic": "/products/m7.webp",
+          "price": 448,
+          "qty": 34,
+          "total": 15232
+        }
+      ],
+      "date": "2024-06-30T05:31:55.663Z"
     },
     {
-      "id": "7980"
+      "id": "4bd6",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 15232,
+      "shipping": 0,
+      "total": 15232,
+      "products": [
+        {
+          "id": "50e6",
+          "user": "ae18",
+          "name": "Male shirt  and boy ",
+          "product": "f457",
+          "brand": "Adidas",
+          "color": "white",
+          "size": "Xl",
+          "pic": "/products/m7.webp",
+          "price": 448,
+          "qty": 34,
+          "total": 15232
+        }
+      ],
+      "date": "2024-06-30T05:32:44.288Z"
     },
     {
-      "id": "8bc9"
+      "id": "8948",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 1740,
+      "shipping": 0,
+      "total": 1740,
+      "products": [
+        {
+          "id": "d672",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 6,
+          "total": 1740
+        }
+      ],
+      "date": "2024-06-30T05:33:37.868Z"
     },
     {
-      "id": "c92a"
+      "id": "24a8",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 5301,
+      "shipping": 0,
+      "total": 5301,
+      "products": [
+        {
+          "id": "4dd9",
+          "user": "ae18",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "32",
+          "pic": "/products/m8.webp",
+          "price": 279,
+          "qty": 19,
+          "stockQuantity": 19,
+          "total": 5301
+        }
+      ],
+      "date": "2024-06-30T05:53:10.594Z"
     },
     {
-      "id": "aa42"
-    },
-    {
-      "id": "2ea4"
-    },
-    {
-      "id": "2a6a"
-    },
-    {
-      "id": "aafb"
-    },
-    {
-      "id": "1365"
-    },
-    {
-      "id": "14b2"
-    },
-    {
-      "id": "6860"
-    },
-    {
-      "id": "a56d"
-    },
-    {
-      "id": "7906"
-    },
-    {
-      "id": "2284"
-    },
-    {
-      "id": "cc26"
-    },
-    {
-      "id": "30c3"
-    },
-    {
-      "id": "5467"
-    },
-    {
-      "id": "81dc"
-    },
-    {
-      "id": "7b8c"
-    },
-    {
-      "id": "b711"
-    },
-    {
-      "id": "8613"
-    },
-    {
-      "id": "3c9b"
-    },
-    {
-      "id": "a915"
-    },
-    {
-      "id": "c6ef"
-    },
-    {
-      "id": "e7f8"
-    },
-    {
-      "id": "1f20"
-    },
-    {
-      "id": "b1fa"
-    },
-    {
-      "id": "0075"
-    },
-    {
-      "id": "939a"
-    },
-    {
-      "id": "29c8"
-    },
-    {
-      "id": "65d4"
-    },
-    {
-      "id": "51db"
-    },
-    {
-      "id": "8421"
-    },
-    {
-      "id": "70cd"
-    },
-    {
-      "id": "850f"
-    },
-    {
-      "id": "ac3b"
-    },
-    {
-      "id": "9bba"
-    },
-    {
-      "id": "2832"
-    },
-    {
-      "id": "7b1c"
-    },
-    {
-      "id": "2828"
-    },
-    {
-      "id": "d0f3"
-    },
-    {
-      "id": "f4d0"
-    },
-    {
-      "id": "96d9"
-    },
-    {
-      "id": "2aa0"
-    },
-    {
-      "id": "0019"
+      "id": "8b8a",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 0,
+      "shipping": 0,
+      "total": 0,
+      "products": [],
+      "date": "2024-06-30T05:53:36.631Z"
     }
   ],
   "newsletter": [],
   "contact": [],
   "cart": [
     {
-      "id": "56d1",
-      "user": "e854",
-      "name": "Shirt For boy ",
-      "product": "2",
-      "brand": "Nike",
-      "color": "White",
-      "size": "23",
-      "price": 430,
-      "qty": 1,
-      "total": 430
-    },
-    {
-      "id": "e804",
-      "user": "e854",
-      "name": "T-Shirt For boy",
-      "product": "14f2",
-      "brand": "Adidas",
-      "color": "purpule",
-      "size": "32",
-      "pic": "/products/m8.webp",
-      "price": 279,
-      "qty": 1,
-      "total": 279
-    },
-    {
-      "id": "3d3c",
-      "user": "e854",
-      "name": "T-Shirt For boy ",
-      "product": "8",
-      "brand": "Nike",
-      "color": "Mixed",
-      "size": "23",
-      "pic": "/products/m7.webp",
-      "price": 320,
-      "qty": 10,
-      "total": 3200
-    },
-    {
-      "id": "36f1",
-      "user": "e854",
-      "name": "Sony Cemra  DSLR",
-      "product": "faa7",
-      "brand": "HP.",
-      "color": "black",
-      "size": "32",
-      "pic": "/products/ii4.webp",
-      "price": 31169,
-      "qty": 1,
-      "total": 31169
-    },
-    {
-      "id": "516d",
-      "user": "ae18",
-      "name": "T-Shirt For men ",
-      "product": "4",
-      "brand": "Zara",
-      "color": "White",
-      "size": "23",
-      "pic": "/products/m2.webp",
-      "price": 420,
-      "qty": 10,
-      "total": 4200
-    },
-    {
-      "id": "3f58",
+      "id": "31cc",
       "user": "ae18",
       "name": "T-Shirt For boy ",
       "product": "1",
@@ -1433,59 +1370,8 @@
       "pic": "/products/i9.webp",
       "price": 410,
       "qty": 1,
+      "stockQuantity": 24,
       "total": 410
-    },
-    {
-      "id": "e7cc",
-      "user": "ae18",
-      "name": "Sony Cemra  DSLR",
-      "product": "faa7",
-      "brand": "HP.",
-      "color": "black",
-      "size": "32",
-      "pic": "/products/ii4.webp",
-      "price": 31169,
-      "qty": 1,
-      "total": 31169
-    },
-    {
-      "id": "fb9d",
-      "user": null,
-      "name": "T-Shirt For boy",
-      "product": "14f2",
-      "brand": "Adidas",
-      "color": "purpule",
-      "size": "32",
-      "pic": "/products/m8.webp",
-      "price": 279,
-      "qty": 13,
-      "total": 3627
-    },
-    {
-      "id": "d94b",
-      "user": null,
-      "name": "T-Shirt For Men ",
-      "product": "5",
-      "brand": "Boss",
-      "color": "White",
-      "size": "23",
-      "pic": "/products/m4.webp",
-      "price": 410,
-      "qty": 10,
-      "total": 4100
-    },
-    {
-      "id": "3ea8",
-      "user": "ae18",
-      "name": "Male shirt  and boy ",
-      "product": "f457",
-      "brand": "Adidas",
-      "color": "white",
-      "size": "Xl",
-      "pic": "/products/m7.webp",
-      "price": 448,
-      "qty": 1,
-      "total": 448
     }
   ]
 }

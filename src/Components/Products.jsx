@@ -33,6 +33,7 @@ export default function Products() {
       pic:product.pic[0],
       price:product.finalPrice,
       qty:qty,
+      stockQuantity:product.quantity,
       total :product.finalPrice*qty
     }
     dispatch(createCart(item))
@@ -52,6 +53,7 @@ export default function Products() {
       size:product.size,
       pic:product.pic[0],
       price:product.finalPrice,
+
     
     }
     dispatch(createWishlist(item))

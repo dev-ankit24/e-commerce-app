@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getCart } from '../Store/ActionCreators/CartActionCreators'
+import { getCart,deleteCart ,getProduct} from '../Store/ActionCreators/CartActionCreators'
+import { updateProductQuantity } from '../Store/ActionCreators/ProductActionCreators'
 import {createCheckout} from "../Store/ActionCreators/CheckoutActionCreators"
 import { Link, useNavigate } from 'react-router-dom'
 import ProfileTable from './Partials/ProfileTable'
 
 
-export default function Checkout() {
+    export default function Checkout() {
     let [user, setUser] = useState({}) 
     let [subtotal,setSubtotal]=useState(0)
     let [shipping, setShipping]=useState(0)
@@ -17,6 +18,7 @@ export default function Checkout() {
     let dispatch =useDispatch()
     let navigate =useNavigate()
     let CartStateData =useSelector((state)=>state.CartStateData)
+    let ProductStateData =useSelector((state)=>state.ProductStateData)
 
     function placeOrder(){
         let item={
@@ -30,7 +32,18 @@ export default function Checkout() {
         products:cart,
         date:new Date()
         }
-        dispatch(createCheckout())
+        dispatch(createCheckout(item))
+        // check  cart in product and update product quantity 
+        for(let item of cart){
+            let p= ProductStateData.find((x)=>x.id===item.product)
+            p.quantity= p.quantity-item.qty
+            if(p.quantity===0)
+                p.stock=false
+            dispatch(updateProductQuantity({...p}))
+            dispatch(deleteCart({id:item.id}))
+
+        }
+
         navigate("/confirmation")
     }
     
@@ -86,7 +99,9 @@ useEffect(()=>{
         <div className="col-md-6"><ProfileTable title="Billing Address" user={user}/></div>
         <div className='col-md-6'>
          <h5 className='bg-warning text-center p-2'>Items In Your Cart</h5>
-        <div className="table-responsive">
+         {
+            cart.length?<>
+            <div className="table-responsive">
                         <table className='table table-bordered border-dark'>
                             <thead>
                                 <tr>
@@ -140,12 +155,16 @@ useEffect(()=>{
                                             </select>
                                         </td>
                                     </tr>
-                                     <tr>
-                                        <th colSpan={2}><Link to="/confirmation" onClick={placeOrder} className='btn btn-warning w-100' >Proceed To Checkout</Link></th>
+                                    <tr>
+                                        <th colSpan={2}><Link to="/confirmation" onClick={placeOrder} className='btn btn-warning w-100' >Place Order</Link></th>
                                      </tr>
+                                     
                                 </thead>
                             </table>
                 </div>
+        
+            </>:"  Sorry  You Have Not Cart"
+         }
         </div>
         </div>
     </div>

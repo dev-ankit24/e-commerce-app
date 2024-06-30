@@ -1,4 +1,4 @@
-import { CREATE_PRODUCT_RED, DELETE_PRODUCT_RED, GET_PRODUCT_RED, UPDATE_PRODUCT_RED } from "../Constant";
+import { CREATE_PRODUCT_RED, DELETE_PRODUCT_RED, GET_PRODUCT_RED, UPDATE_PRODUCT_RED,UPDATE_PRODUCT_QUANTITY_RED } from "../Constant";
 
 export default function ProductReducer(state=[], action){
 let newState, index
@@ -28,6 +28,13 @@ let newState, index
             state[index].description = action.payload.description
             state[index].active = action.payload.active
             return state
+         
+            case UPDATE_PRODUCT_QUANTITY_RED:
+                index=state.findIndex((x)=>x.id === action.payload.id)
+                state[index].quantity = action.payload.quantity
+                if(state[index].quantity===0)
+                    state[index].stock=false
+                return state
         
         case DELETE_PRODUCT_RED:
             return state.filter((x)=> x.id !== action.payload.id)

@@ -1,4 +1,4 @@
-import { CREATE_PRODUCT, DELETE_PRODUCT, GET_PRODUCT, UPDATE_PRODUCT } from "../Constant";
+import { CREATE_PRODUCT, DELETE_PRODUCT, GET_PRODUCT, UPDATE_PRODUCT , UPDATE_PRODUCT_QUANTITY } from "../Constant";
 
 export function createProduct(data){
     return{
@@ -16,6 +16,12 @@ export function getProduct(){
 export function updateProduct(data){
     return{
         type:UPDATE_PRODUCT,
+        payload: data
+    }
+}
+export function updateProductQuantity(data){
+    return{
+        type:UPDATE_PRODUCT_QUANTITY,
         payload: data
     }
 }
