@@ -163,7 +163,12 @@ useEffect(()=>{
                             </table>
                 </div>
         
-            </>:"  Sorry  You Have Not Cart"
+            </>:<>
+            <div  className='text-center text-danger mx-5'>
+                  <h4>  Sorry !!  You Have No Item in Your Cart  </h4>              
+                 <Link to='/shop' className='btn bg-warning text-dark p-2 '>Shop Now</Link>
+            </div>
+            </>
          }
         </div>
         </div>

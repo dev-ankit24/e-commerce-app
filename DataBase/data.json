@@ -194,7 +194,7 @@
       "finalPrice": 290,
       "discount": 11,
       "stock": "false",
-      "quantity": 299,
+      "quantity": 298,
       "description": "<p>hello&nbsp;&nbsp;</p>",
       "pic": [
         "/products/m3.webp",
@@ -232,8 +232,8 @@
       "basePrice": 450,
       "finalPrice": 410,
       "discount": 4,
-      "stock": "false",
-      "quantity": 24,
+      "stock": false,
+      "quantity": 0,
       "description": "<p>hello test</p>",
       "pic": [
         "/products/i9.webp"
@@ -1354,24 +1354,61 @@
       "total": 0,
       "products": [],
       "date": "2024-06-30T05:53:36.631Z"
+    },
+    {
+      "id": "a290",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "4b29",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 299,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-01T02:26:57.425Z"
+    },
+    {
+      "id": "8665",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 9840,
+      "shipping": 0,
+      "total": 9840,
+      "products": [
+        {
+          "id": "eb88",
+          "user": "ae18",
+          "name": "T-Shirt For boy ",
+          "product": "1",
+          "brand": "Nike",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/i9.webp",
+          "price": 410,
+          "qty": 24,
+          "stockQuantity": 24,
+          "total": 9840
+        }
+      ],
+      "date": "2024-07-01T02:27:56.235Z"
     }
   ],
   "newsletter": [],
   "contact": [],
-  "cart": [
-    {
-      "id": "31cc",
-      "user": "ae18",
-      "name": "T-Shirt For boy ",
-      "product": "1",
-      "brand": "Nike",
-      "color": "White",
-      "size": "23",
-      "pic": "/products/i9.webp",
-      "price": 410,
-      "qty": 1,
-      "stockQuantity": 24,
-      "total": 410
-    }
-  ]
+  "cart": []
 }
