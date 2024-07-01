@@ -22,6 +22,7 @@ import ProfileTable from './Partials/ProfileTable'
 
     function placeOrder(){
         let item={
+            user:localStorage.getItem("userid"),
         oderStatus:"Order is Placed",
         // paymentMode:mode,
         paymentMode:"COD",

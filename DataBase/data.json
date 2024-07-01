@@ -194,7 +194,7 @@
       "finalPrice": 290,
       "discount": 11,
       "stock": "false",
-      "quantity": 298,
+      "quantity": 297,
       "description": "<p>hello&nbsp;&nbsp;</p>",
       "pic": [
         "/products/m3.webp",
@@ -214,7 +214,7 @@
       "finalPrice": 369,
       "discount": 11,
       "stock": true,
-      "quantity": 78,
+      "quantity": 77,
       "description": "<p>hello testf</p>",
       "pic": [
         "/products/m8.webp",
@@ -999,7 +999,7 @@
       "finalPrice": 15435,
       "discount": 12,
       "stock": true,
-      "quantity": 55,
+      "quantity": 54,
       "description": "<p>good phone</p>",
       "pic": [
         "/products/i14.webp"
@@ -1181,188 +1181,77 @@
       "role": "Admin"
     }
   ],
-  "wishlist": [],
+  "wishlist": [
+    {
+      "id": "66e7",
+      "user": "ae18",
+      "name": "Samsung F30A",
+      "product": "bf75",
+      "brand": "samsung",
+      "color": "SILVER",
+      "size": "14.25m",
+      "pic": "/products/i14.webp",
+      "price": 15435
+    }
+  ],
   "checkout": [
     {
-      "id": "024d"
-    },
-    {
-      "id": "4e25",
+      "id": "12dc",
+      "user": "ae18",
       "oderStatus": "Order is Placed",
       "paymentMode": "COD",
       "paymentStatus": "Pending",
-      "subtotal": 279,
+      "subtotal": 15435,
+      "shipping": 0,
+      "total": 15435,
+      "products": [
+        {
+          "id": "31c4",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 1,
+          "stockQuantity": 55,
+          "total": 15435
+        }
+      ],
+      "date": "2024-07-01T03:52:52.847Z"
+    },
+    {
+      "id": "af2f",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 369,
       "shipping": 60,
-      "total": 339,
+      "total": 429,
       "products": [
         {
-          "id": "0de3",
+          "id": "69a6",
           "user": "ae18",
           "name": "T-Shirt For boy",
           "product": "14f2",
           "brand": "Adidas",
           "color": "purpule",
-          "size": "32",
+          "size": "2xl",
           "pic": "/products/m8.webp",
-          "price": 279,
+          "price": 369,
           "qty": 1,
-          "total": 279
+          "stockQuantity": 78,
+          "total": 369
         }
       ],
-      "date": "2024-06-30T03:25:25.035Z"
+      "date": "2024-07-01T04:03:43.697Z"
     },
     {
-      "id": "1331",
-      "oderStatus": "Order is Placed",
-      "paymentMode": "COD",
-      "paymentStatus": "Pending",
-      "subtotal": 2519,
-      "shipping": 0,
-      "total": 2519,
-      "products": [
-        {
-          "id": "0de3",
-          "user": "ae18",
-          "name": "T-Shirt For boy",
-          "product": "14f2",
-          "brand": "Adidas",
-          "color": "purpule",
-          "size": "32",
-          "pic": "/products/m8.webp",
-          "price": 279,
-          "qty": 1,
-          "total": 279
-        },
-        {
-          "id": "50e6",
-          "user": "ae18",
-          "name": "Male shirt  and boy ",
-          "product": "f457",
-          "brand": "Adidas",
-          "color": "white",
-          "size": "Xl",
-          "pic": "/products/m7.webp",
-          "price": 448,
-          "qty": 5,
-          "total": 2240
-        }
-      ],
-      "date": "2024-06-30T05:14:42.633Z"
-    },
-    {
-      "id": "6dac",
-      "oderStatus": "Order is Placed",
-      "paymentMode": "COD",
-      "paymentStatus": "Pending",
-      "subtotal": 15232,
-      "shipping": 0,
-      "total": 15232,
-      "products": [
-        {
-          "id": "50e6",
-          "user": "ae18",
-          "name": "Male shirt  and boy ",
-          "product": "f457",
-          "brand": "Adidas",
-          "color": "white",
-          "size": "Xl",
-          "pic": "/products/m7.webp",
-          "price": 448,
-          "qty": 34,
-          "total": 15232
-        }
-      ],
-      "date": "2024-06-30T05:31:55.663Z"
-    },
-    {
-      "id": "4bd6",
-      "oderStatus": "Order is Placed",
-      "paymentMode": "COD",
-      "paymentStatus": "Pending",
-      "subtotal": 15232,
-      "shipping": 0,
-      "total": 15232,
-      "products": [
-        {
-          "id": "50e6",
-          "user": "ae18",
-          "name": "Male shirt  and boy ",
-          "product": "f457",
-          "brand": "Adidas",
-          "color": "white",
-          "size": "Xl",
-          "pic": "/products/m7.webp",
-          "price": 448,
-          "qty": 34,
-          "total": 15232
-        }
-      ],
-      "date": "2024-06-30T05:32:44.288Z"
-    },
-    {
-      "id": "8948",
-      "oderStatus": "Order is Placed",
-      "paymentMode": "COD",
-      "paymentStatus": "Pending",
-      "subtotal": 1740,
-      "shipping": 0,
-      "total": 1740,
-      "products": [
-        {
-          "id": "d672",
-          "user": "ae18",
-          "name": "Male Jeans for boy",
-          "product": "6424",
-          "brand": "Nike",
-          "color": "black ",
-          "size": "32",
-          "pic": "/products/m3.webp",
-          "price": 290,
-          "qty": 6,
-          "total": 1740
-        }
-      ],
-      "date": "2024-06-30T05:33:37.868Z"
-    },
-    {
-      "id": "24a8",
-      "oderStatus": "Order is Placed",
-      "paymentMode": "COD",
-      "paymentStatus": "Pending",
-      "subtotal": 5301,
-      "shipping": 0,
-      "total": 5301,
-      "products": [
-        {
-          "id": "4dd9",
-          "user": "ae18",
-          "name": "T-Shirt For boy",
-          "product": "14f2",
-          "brand": "Adidas",
-          "color": "purpule",
-          "size": "32",
-          "pic": "/products/m8.webp",
-          "price": 279,
-          "qty": 19,
-          "stockQuantity": 19,
-          "total": 5301
-        }
-      ],
-      "date": "2024-06-30T05:53:10.594Z"
-    },
-    {
-      "id": "8b8a",
-      "oderStatus": "Order is Placed",
-      "paymentMode": "COD",
-      "paymentStatus": "Pending",
-      "subtotal": 0,
-      "shipping": 0,
-      "total": 0,
-      "products": [],
-      "date": "2024-06-30T05:53:36.631Z"
-    },
-    {
-      "id": "a290",
+      "id": "01d1",
+      "user": "ae18",
       "oderStatus": "Order is Placed",
       "paymentMode": "COD",
       "paymentStatus": "Pending",
@@ -1371,7 +1260,7 @@
       "total": 350,
       "products": [
         {
-          "id": "4b29",
+          "id": "2fd4",
           "user": "ae18",
           "name": "Male Jeans for boy",
           "product": "6424",
@@ -1381,37 +1270,11 @@
           "pic": "/products/m3.webp",
           "price": 290,
           "qty": 1,
-          "stockQuantity": 299,
+          "stockQuantity": 298,
           "total": 290
         }
       ],
-      "date": "2024-07-01T02:26:57.425Z"
-    },
-    {
-      "id": "8665",
-      "oderStatus": "Order is Placed",
-      "paymentMode": "COD",
-      "paymentStatus": "Pending",
-      "subtotal": 9840,
-      "shipping": 0,
-      "total": 9840,
-      "products": [
-        {
-          "id": "eb88",
-          "user": "ae18",
-          "name": "T-Shirt For boy ",
-          "product": "1",
-          "brand": "Nike",
-          "color": "White",
-          "size": "23",
-          "pic": "/products/i9.webp",
-          "price": 410,
-          "qty": 24,
-          "stockQuantity": 24,
-          "total": 9840
-        }
-      ],
-      "date": "2024-07-01T02:27:56.235Z"
+      "date": "2024-07-01T04:23:59.401Z"
     }
   ],
   "newsletter": [],
