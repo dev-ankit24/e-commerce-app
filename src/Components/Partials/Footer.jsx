@@ -1,7 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
+import {getNewsletter, createNewsletter} from '../../Store/ActionCreators/NewsletterActionCreators'
+
 export default function Footer() {
+  let [email,setEmail]=useState("")
+  let [message,setMassage]=useState("")
+  let dispatch =useDispatch()
+
+  let NewsletterStateData=useSelector((state)=>state.NewsletterStateData)
+function postData(){
+   let item =NewsletterStateData.find((x)=>x.email===email)
+    if(item)
+       setMassage(" Sorry !!  Your Email is alredy Registered")
+    else{
+      dispatch(createNewsletter({email:email, active:true}))
+      setMassage("Thanks !! For Subscribe ")
+    }
+}
+ useEffect(()=>{
+  (()=>{
+    dispatch(getNewsletter())
+    
+  })()
+ },[NewsletterStateData.length])
   return (
      <>
       {/* <!-- Footer Start --> */}
@@ -53,13 +76,16 @@ export default function Footer() {
           <div className="col-lg-4 col-md-6">
             <h5 className="text-light mb-4">Newsletter</h5>
             <p className='text-light'>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            {message?<p className='text-success'>{message}</p>:""}
             <div className="position-relative mx-auto" style={{maxWidth:"400px"}}>
               <input
-                className="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                className="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-light"
                 type="text"
                 placeholder="Your email"
+                onChange={(e)=>setEmail(e.target.value)}
               />
               <button
+              onClick={postData}
                 type="button"
                 className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
               >

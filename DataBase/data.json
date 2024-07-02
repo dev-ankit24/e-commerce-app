@@ -194,7 +194,7 @@
       "finalPrice": 290,
       "discount": 11,
       "stock": "false",
-      "quantity": 297,
+      "quantity": 296,
       "description": "<p>hello&nbsp;&nbsp;</p>",
       "pic": [
         "/products/m3.webp",
@@ -1370,9 +1370,47 @@
         }
       ],
       "date": "2024-07-02T04:08:32.742Z"
+    },
+    {
+      "id": "5b83",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "2cdd",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 297,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-02T05:29:22.543Z"
     }
   ],
-  "newsletter": [],
+  "newsletter": [
+    {
+      "id": "44c5",
+      "email": "abc@gamil.com",
+      "active": true
+    },
+    {
+      "id": "8ba7",
+      "email": "abcd@gmail.com",
+      "active": true
+    }
+  ],
   "contact": [],
   "cart": []
 }

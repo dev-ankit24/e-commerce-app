@@ -226,7 +226,7 @@ function Profile() {
                     })
                     :
                 <div className="text-center">
-                    <h5 className='bg-primary  text-light'>No Oders History found</h5>
+                    <h5  >No Oders History found</h5>
                     <Link to='/shop' className='btn btn-warning'>Shop Now</Link>
                 </div>
                 }
