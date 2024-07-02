@@ -214,7 +214,7 @@
       "finalPrice": 369,
       "discount": 11,
       "stock": true,
-      "quantity": 77,
+      "quantity": 75,
       "description": "<p>hello testf</p>",
       "pic": [
         "/products/m8.webp",
@@ -296,7 +296,7 @@
       "finalPrice": 420,
       "discount": 4,
       "stock": "false",
-      "quantity": 24,
+      "quantity": 23,
       "description": "<p>hello test</p>",
       "pic": [
         "/products/m2.webp"
@@ -999,7 +999,7 @@
       "finalPrice": 15435,
       "discount": 12,
       "stock": true,
-      "quantity": 54,
+      "quantity": 53,
       "description": "<p>good phone</p>",
       "pic": [
         "/products/i14.webp"
@@ -1275,6 +1275,101 @@
         }
       ],
       "date": "2024-07-01T04:23:59.401Z"
+    },
+    {
+      "id": "bfa6",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 420,
+      "shipping": 60,
+      "total": 480,
+      "products": [
+        {
+          "id": "597d",
+          "user": "ae18",
+          "name": "T-Shirt For men ",
+          "product": "4",
+          "brand": "Zara",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m2.webp",
+          "price": 420,
+          "qty": 1,
+          "stockQuantity": 24,
+          "total": 420
+        }
+      ],
+      "date": "2024-07-02T03:27:22.945Z"
+    },
+    {
+      "id": "7c8a",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 15804,
+      "shipping": 0,
+      "total": 15804,
+      "products": [
+        {
+          "id": "88cd",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 1,
+          "stockQuantity": 54,
+          "total": 15435
+        },
+        {
+          "id": "7442",
+          "user": "ae18",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "2xl",
+          "pic": "/products/m8.webp",
+          "price": 369,
+          "qty": 1,
+          "stockQuantity": 77,
+          "total": 369
+        }
+      ],
+      "date": "2024-07-02T03:38:15.372Z"
+    },
+    {
+      "id": "2893",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 369,
+      "shipping": 60,
+      "total": 429,
+      "products": [
+        {
+          "id": "fc08",
+          "user": "ae18",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "2xl",
+          "pic": "/products/m8.webp",
+          "price": 369,
+          "qty": 1,
+          "stockQuantity": 76,
+          "total": 369
+        }
+      ],
+      "date": "2024-07-02T04:08:32.742Z"
     }
   ],
   "newsletter": [],

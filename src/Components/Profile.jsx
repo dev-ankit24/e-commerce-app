@@ -36,7 +36,7 @@ function Profile() {
     },[])
 
        // Delete Product from Wishlist Table
-       async function deleteData(id) {
+      function deleteData(id) {
         if (window.confirm("You Are Sure to Delete Product from Wishlist : ")) {
          dispatch(deleteWishlist({id:id}))
           getAPIData();
@@ -125,21 +125,23 @@ function Profile() {
                         </table>
 
                     </div>:
-                    <div className="text-center mx-2" >
+                    < div className="text-center mx-2" >
                         <h5 className='bg-primary  text-light'>No Item in Wishlist</h5>
                         <Link to='/shop' className='btn btn-primary' style={{marginBottom:"20px"}}>Shop Now</Link>
                     </div>   
                 }
 
                 {/* user order histry and trackout your product*/}
+                <h5 className='bg-warning text-center text-dark  text-light'> Your Order History Section</h5>
+
                 {
                     orders.length?
                     orders.map((item,index)=>{
-                        return <div className="row" key={index}>
-                    <h5 className='bg-warning text-center text-dark  text-light'> Your Order History Section</h5>
-
+                        return <div className="row border-bottom border-warning p-2 mb-3" key={index}>
                         <div className="col-md-3">
-                            <table>
+                            <div className="table-responsive">
+                            <table className='table table-bordered border-dark'>
+                                <tbody>
                                 <tr>
                                     <th>Order Id</th>
                                     <td>{item.id}</td>
@@ -157,17 +159,74 @@ function Profile() {
                                     <td>{item.paymentStatus}</td>
                                 </tr>
                                 <tr>
-                                    <th>SubTotal</th>
-                                    <td>{item.subtotal}</td>
+                                    <th>Shipping</th>
+                                    <td> &#8377; {item.shipping}</td>
                                 </tr>
+                                <tr>
+                                    <th>SubTotal</th>
+                                    <td>&#8377; {item.subtotal}</td>
+                                </tr>
+                                <tr>
+                                    <th>Total</th>
+                                    <td>&#8377; {item.total}</td>
+                                </tr>
+                                <tr>
+                                    <th>Date</th>
+                                    <td>{new Date(item.date).toDateString()}</td>
+                                </tr>
+                                </tbody>
                             </table>
+                            </div>
                         </div>
-                        <div className="col-9"></div>
+                        <div className="col-9">
+                        
+                        <div className="table-responsive">
+                        <table className='table table-bordered border-primary'>
+                            <thead>
+                                <tr>
+                                   <th></th>
+                                   <th>Name</th>
+                                   <th>Brand</th>
+                                   <th>Color</th>
+                                   <th>Size</th>
+                                   <th>Price</th>
+                                   <th>QTY</th>
+                                   <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               {
+                                item.products?.map((item, index)=>{
+                                    return( <tr key={index}>
+                                        <td><a href={item.pic} target='_blank'>
+                                           <img src={item.pic} alt="item image" width={50} height={50}/>
+                                            </a>
+                                        </td>
+                                        <td>{item.name}</td>
+                                        <td>{item.brand}</td>
+                                        <td>{item.color}</td>
+                                        <td>{item.size}</td>
+                                        <td>&#8377;{item.price}</td>
+                                        <td>{item.qty}</td>
+                                    
+                                        <td>&#8377;{item.total}</td>
+
+                                    
+                                    </tr>
+                                    )
+                                })
+                               }
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                        </div>
                     </div>
                     })
                     :
                 <div className="text-center">
-                    <h5 className='bg-primary  text-light'>No Item in Wishlist</h5>
+                    <h5 className='bg-primary  text-light'>No Oders History found</h5>
                     <Link to='/shop' className='btn btn-warning'>Shop Now</Link>
                 </div>
                 }
