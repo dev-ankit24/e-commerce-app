@@ -34,7 +34,7 @@ export default function Product(props){
                      <h4 className="mb-3 " style={{height:50}}>{item.name}</h4>
                    <p style={{color:"black", fontSize:"19px", fontWeight:700}}><del className='text-danger mx-4'>&#8377; {item.basePrice}</del>&#8377;{item.finalPrice}<sup className='text-success fs-6'>{item.discount}% Off</sup></p>
                    <p style={{color:"black" }}> {item.quantity} In Stock</p>
-                  <Link to={`/products/${item.id}` } className='btn btn-warning  w-100'>Add to Card</Link>
+                  < Link to={`/products/${item.id}` } className='btn btn-warning  w-100'>Add to Card</Link>
                 </div>
               </div>
             </div>

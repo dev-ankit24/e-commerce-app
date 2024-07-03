@@ -27,10 +27,18 @@ export default function FormValidation(e) {
     case "name":
     case "color":
     case "username":
-      if (!value || value.length === 0) return name + " is Mendatory";
+      if (!value || value.length === 0)
+         return name + " is Mendatory";
       else if (value.length < 3 || value.lenght > 10)
         return name + " Field Length Must Be 3-50";
       else return "";
+
+      case "subject":
+        if (!value || value.length === 0) 
+          return name + " is Mendatory";
+        else if (value.length < 3 || value.lenght >200)
+          return name + " Field Length Must Be 3-50";
+        else return "";
 
     case "email":
       if (!value || value.length === 0) return name + " is Mendatory";

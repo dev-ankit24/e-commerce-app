@@ -1,6 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import {createContactUs} from '../Store/ActionCreators/ContactUsActionCreators'
+import FormValidation from './Validators/FormValidation'
 
 export default function Contact() {
+  var [data, setData]=useState({
+    name:"",
+    email:"",
+    phone:"",
+    subject:"",
+    message:""
+  })
+
+  var [errorMessage,setErrorMessage]=useState({
+    name:"Name is Field Required",
+    email:"Email is Field Required",
+    phone:"Phone is Field Required",
+    subject:"Subject is Field Required",
+    message:"Message is Field Required",
+  })
+  let [message,setMessage]=useState("")
+  let [show ,setShow]=useState(false)
+  let dispatch =useDispatch()
+
+  function getInputData(e) {
+    let { name, value } = e.target;
+      setErrorMessage(FormValidation(e));
+    setData((old) => {
+      return {
+        ...old,
+        [name]: value,
+      };
+    });
+  }
+  function postData(e) {
+    e.preventDefault();
+   let error = Object.values(errorMessage).find((x)=>x.length!=="")
+   if(error)
+    setShow(true)
+  else{
+    dispatch(createContactUs({...data, date:new Date(), active:true}))
+    setMessage("Thanks you to share Your Query with us ,Our team Will Contact You Soon")
+  }
+  }
   return (
     <>
     {/* <!-- Contact Start --> */}
@@ -51,63 +93,26 @@ export default function Contact() {
                 If You Have Any Query, Please Contact Us
               </h5>
             </div>
-            <p className="mb-4">
-              The contact form is currently inactive. Get a functional and
-              working contact form with Ajax & PHP in a few minutes. Just copy
-              and paste the files, add a little code and you're done.
-              <a href="https://htmlcodex.com/contact-form">Download Now</a>.
-            </p>
-            <form>
-              <div className="row g-3">
-                <div className="col-md-6">
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control border-0 bg-light"
-                      id="name"
-                      placeholder="Your Name"
-                    />
-                    <label for="name">Your Name</label>
-                  </div>
+            {message?<p className='text-success'>{message}</p>:""}
+            <form onSubmit={postData}>
+              <div className="mb-3">
+                  <input type="text"  name='name' value={data.name} className={`form-control border-2 border-primary ${show && errorMessage.name?`border-danger border-2`: `border-primary border-2`}`} placeholder='Full Name' />
+                  {show && errorMessage.name?<p className='text-danger'>{errorMessage.name}</p>:""}
+              </div>
+
+              <div className="row">
+                <div className="col-md-6 mb-2">
+                    <input type="text"  name='email' value={data.email} className={`form-control border-2 border-primary ${show && errorMessage.email?`border-danger border-2`: `border-primary border-2`}`} placeholder='Email Address' />
+                    {show && errorMessage.email?<p className='text-danger'>{errorMessage.email}</p>:""}
                 </div>
-                <div className="col-md-6">
-                  <div className="form-floating">
-                    <input
-                      type="email"
-                      className="form-control border-0 bg-light"
-                      id="email"
-                      placeholder="Your Email"
-                    />
-                    <label for="email">Your Email</label>
-                  </div>
+                <div className="col-md-6 mb-2">
+                   <input type="number"  name='phone' value={data.phone} className={`form-control border-2 border-primary ${show && errorMessage.phone?`border-danger border-2`: `border-primary border-2`}`} placeholder='Phone Number' />
+                   {show && errorMessage.phone?<p className='text-danger'>{errorMessage.phone}</p>:""}
                 </div>
-                <div className="col-12">
-                  <div className="form-floating">
-                    <input
-                      type="text"
-                      className="form-control border-0 bg-light"
-                      id="subject"
-                      placeholder="Subject"
-                    />
-                    <label for="subject">Subject</label>
-                  </div>
-                </div>
-                <div className="col-12">
-                  <div className="form-floating">
-                    <textarea
-                      className="form-control border-0 bg-light"
-                      placeholder="Leave a message here"
-                      id="message"
-                      style={{height: "150px"}}
-                    ></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                </div>
-                <div className="col-12">
-                  <button className="btn btn-primary py-3 px-5" type="submit">
-                    Send Message
-                  </button>
-                </div>
+              </div>
+
+              <div className="mb-3">
+                <button type='submit' className='btn btn-warning w-100'>Submit</button>
               </div>
             </form>
           </div>
