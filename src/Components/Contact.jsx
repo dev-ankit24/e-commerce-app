@@ -6,41 +6,27 @@ export default function Contact() {
     {/* <!-- Contact Start --> */}
     <div className="container-xxl py-5">
       <div className="container">
+      <div className="wow fadeInUp mb-5" data-wow-delay="0.1s">
+            <div className="row g-4 align-items-center">
+              <div className="col-sm-6">
+                <img className="img-fluid" src='/img_banner/img2.jpg' style={{height:250, width:"80%"}} alt="contact/images" />
+              </div>
+              <div className="col-sm-6">
+                <h3 className="mb-0">FashionShop</h3>
+                <h6>Contact Details</h6>
+                <p style={{textAlign:"justify"}}>
+                If you require any further information, please feel free to reach out to me. <b>If I can be of any help,</b> please do not hesitate to <b>contact me </b>. Please let me know if you have further questions on this matter.  <br />
+                we established this secure connection in case he ever had a need to contact us. If you have any comments or questions about this website or <b>fashionShop</b> in general, feel free to contact us.
+                </p>
+                  <div className="d-flex justify-content-between">
+                  <p className="mb-0"><i className='fa fa-phone'></i>    < a href="tel:+918392823395">+91 8392823395</a></p>
+                  <p className="mb-0"><i className='fa fa-envelope'></i>   <a href="mailto:akumarrai45@gmail.com">akumarrai45@gamil.com</a></p>
+                  </div>
+              </div>
+            </div>
+          </div>
         <div className="row g-5">
-          <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="row g-4 align-items-center">
-              <div className="col-sm-6">
-                <img className="img-fluid" src="img/team-1.jpg" alt="" />
-              </div>
-              <div className="col-sm-6">
-                <h3 className="mb-0">Full Name</h3>
-                <p>Head of Sales</p>
-                <h6>Contact Details</h6>
-                <p>
-                  Lorem ipsum dolor sit amet conse elit sed eiu smod lab ore.
-                </p>
-                <p className="mb-0">Call: +012 345 6789</p>
-                <p className="mb-0">Email: sales@example.com</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="row g-4 align-items-center">
-              <div className="col-sm-6">
-                <img className="img-fluid" src="img/team-2.jpg" alt="" />
-              </div>
-              <div className="col-sm-6">
-                <h3 className="mb-0">Full Name</h3>
-                <p>Head of Marketing</p>
-                <h6>Contact Details</h6>
-                <p>
-                  Lorem ipsum dolor sit amet conse elit sed eiu smod lab ore.
-                </p>
-                <p className="mb-0">Call: +012 345 6789</p>
-                <p className="mb-0">Email: sales@example.com</p>
-              </div>
-            </div>
-          </div>
+         
           <div
             className="col-lg-6 wow fadeInUp"
             data-wow-delay="0.1s"
@@ -61,9 +47,9 @@ export default function Contact() {
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div className="border-start border-5 border-primary ps-4 mb-5">
               <h6 className="text-body text-uppercase mb-2">Contact Us</h6>
-              <h1 className="display-6 mb-0">
+              <h5 className=" mb-0">
                 If You Have Any Query, Please Contact Us
-              </h1>
+              </h5>
             </div>
             <p className="mb-4">
               The contact form is currently inactive. Get a functional and
