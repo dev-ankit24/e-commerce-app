@@ -88,7 +88,8 @@ export default function FormValidation(e) {
 
     case "message":
       if (!value || value.length === 0) return name + " is Mendatory";
-      else if (value.length < 50) return name + " Pls enter  minimum 50 letter";
+      else if (value.length < 50) 
+        return name + " Pls enter  minimum 50 letter";
       else return "";
     default:
       return "";

@@ -23,9 +23,14 @@ export default function Contact() {
   let [show ,setShow]=useState(false)
   let dispatch =useDispatch()
 
-  function getInputData(e) {
+  function inputData(e) {
     let { name, value } = e.target;
-      setErrorMessage(FormValidation(e));
+      setErrorMessage((old)=>{
+        return{
+          ...old,
+          [name]:FormValidation(e)
+        }
+      });
     setData((old) => {
       return {
         ...old,
@@ -35,11 +40,18 @@ export default function Contact() {
   }
   function postData(e) {
     e.preventDefault();
-   let error = Object.values(errorMessage).find((x)=>x.length!=="")
+   let error = Object.values(errorMessage).find((x)=>x.length>0)
    if(error)
     setShow(true)
   else{
     dispatch(createContactUs({...data, date:new Date(), active:true}))
+    setData({
+      name:"",
+      email:"",
+      phone:"",
+      subject:"",
+      message:""
+    })
     setMessage("Thanks you to share Your Query with us ,Our team Will Contact You Soon")
   }
   }
@@ -96,19 +108,33 @@ export default function Contact() {
             {message?<p className='text-success'>{message}</p>:""}
             <form onSubmit={postData}>
               <div className="mb-3">
-                  <input type="text"  name='name' value={data.name} className={`form-control border-2 border-primary ${show && errorMessage.name?`border-danger border-2`: `border-primary border-2`}`} placeholder='Full Name' />
+                  <input type="text"  name='name' onChange={inputData}  value={data.name} className={`form-control border-2 border-primary ${show && errorMessage.name?`border-danger border-2`: `border-primary border-2`}`} placeholder='Full Name' />
                   {show && errorMessage.name?<p className='text-danger'>{errorMessage.name}</p>:""}
               </div>
 
               <div className="row">
                 <div className="col-md-6 mb-2">
-                    <input type="text"  name='email' value={data.email} className={`form-control border-2 border-primary ${show && errorMessage.email?`border-danger border-2`: `border-primary border-2`}`} placeholder='Email Address' />
+                    <div className="mb-2">
+                    <input type="text"  onChange={inputData} name='email' value={data.email} className={`form-control border-2 border-primary ${show && errorMessage.email?`border-danger border-2`: `border-primary border-2`}`} placeholder='Email Address' />
                     {show && errorMessage.email?<p className='text-danger'>{errorMessage.email}</p>:""}
+                    </div>
                 </div>
                 <div className="col-md-6 mb-2">
-                   <input type="number"  name='phone' value={data.phone} className={`form-control border-2 border-primary ${show && errorMessage.phone?`border-danger border-2`: `border-primary border-2`}`} placeholder='Phone Number' />
-                   {show && errorMessage.phone?<p className='text-danger'>{errorMessage.phone}</p>:""}
+                  <div className="mb-2">
+                  <input type="number"onChange={inputData}   name='phone' value={data.phone} className={`form-control border-2 border-primary ${show && errorMessage.phone?`border-danger border-2`: `border-primary border-2`}`} placeholder='Phone Number' />
+                  {show && errorMessage.phone?<p className='text-danger'>{errorMessage.phone}</p>:""}
+                  </div>
                 </div>
+              </div>
+
+              <div className="mb-3">
+                  <input type="text"  name='subject' onChange={inputData}  value={data.subject} className={`form-control border-2 border-primary ${show && errorMessage.subject?`border-danger border-2`: `border-primary border-2`}`} placeholder='Subject*' />
+                  {show && errorMessage.subject?<p className='text-danger'>{errorMessage.subject}</p>:""}
+              </div>
+
+              <div className=" mb-3">
+                  <textarea name="message" value={data.message} onChange={inputData} className={`border-2 border-primary form-control ${show && errorMessage.message?'border-danger':'border-primary'}`} placeholder='Message.....'  rows={3}></textarea>
+                  {show && errorMessage.message?<p className='text-danger'>{errorMessage.message}</p>:""}
               </div>
 
               <div className="mb-3">
