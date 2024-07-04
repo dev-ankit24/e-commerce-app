@@ -1401,11 +1401,6 @@
   ],
   "newsletter": [
     {
-      "id": "44c5",
-      "email": "abc@gamil.com",
-      "active": true
-    },
-    {
       "id": "8ba7",
       "email": "abcd@gmail.com",
       "active": true

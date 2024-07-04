@@ -41,6 +41,7 @@ import UpdateProfile from "./UpdateProfile";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
 import Confirmation from "./Confirmation";
+import AdminNewsletter from "./Admin/Newsletter/AdminNewsletter";
 
 export default function App() {
   return (
@@ -91,6 +92,10 @@ export default function App() {
                < Route path='/admin/product' element={<AdminProduct/>}/>
               <Route path='/admin/product/update/:id' element={<AdminUpdateProduct/>}/>
               <Route path='/admin/product/create' element={<AdminCreateProduct/>}/>
+
+              {/* NeswLetter Route */}
+              <Route path='/admin/newsletter' element={<AdminNewsletter/>}/>
+
 
               <Route path='/*' element={<Error/>}/>
             </Routes>
