@@ -20,9 +20,9 @@ export default function SideBar() {
   </NavLink>
   <NavLink to="/admin/user" className="list-group-item list-group-item-action mb-1" aria-current="true"><i className="fa fa-users  fs-4"></i><span className="float-end">User</span>
   </NavLink>
-  <NavLink to="/admin/newsletter" className="list-group-item list-group-item-action mb-1" aria-current="true"><i className="fa fa-envelope fs-4"></i><span className="float-end">Newsetter</span>
+  <NavLink to="/admin/newsletter" className="list-group-item list-group-item-action mb-1" aria-current="true"><i className="fa fa-envelope fs-4"></i><span className="float-end">NewsLetter</span>
   </NavLink>
-  <NavLink to="/admin/checkout" className="list-group-item list-group-item-action mb-1" aria-current="true"><i className="fa fa-shopping-bag fs-4"></i><span className="float-end">Checkout</span>
+  <NavLink to="/admin/checkout" className="list-group-item list-group-item-action mb-1" aria-current="true"><i className="fa fa-shopping-bag fs-4"></i><span className="float-end">CheckOut</span>
   </NavLink>
   <NavLink to="/admin/contact" className="list-group-item list-group-item-action mb-1" aria-current="true"><i className="fa fa-phone fs-4"></i><span className="float-end">Contact</span>
   </NavLink>
