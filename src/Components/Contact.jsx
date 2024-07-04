@@ -66,7 +66,7 @@ export default function Contact() {
                 <img className="img-fluid" src='/img_banner/img2.jpg' style={{height:250, width:"80%"}} alt="contact/images" />
               </div>
               <div className="col-sm-6">
-                <h3 className="mb-0">FashionShop</h3>
+                <h4 className="mb-0">FashionShop (A-43, Sector-16, Noida U.P)</h4>
                 <h6>Contact Details</h6>
                 <p style={{textAlign:"justify"}}>
                 If you require any further information, please feel free to reach out to me. <b>If I can be of any help,</b> please do not hesitate to <b>contact me </b>. Please let me know if you have further questions on this matter.  <br />
