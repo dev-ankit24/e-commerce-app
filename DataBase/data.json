@@ -194,7 +194,7 @@
       "finalPrice": 290,
       "discount": 11,
       "stock": "false",
-      "quantity": 296,
+      "quantity": 295,
       "description": "<p>hello&nbsp;&nbsp;</p>",
       "pic": [
         "/products/m3.webp",
@@ -1388,13 +1388,40 @@
         }
       ],
       "date": "2024-07-02T05:29:22.543Z"
+    },
+    {
+      "id": "4db8",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "6b11",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 296,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-06T10:08:23.200Z"
     }
   ],
   "newsletter": [
     {
       "id": "6590",
       "email": "ankitkumar@gamil.com",
-      "active": true
+      "active": false
     },
     {
       "id": "aca4",
@@ -1404,313 +1431,33 @@
   ],
   "contact": [
     {
-      "id": "3e97",
-      "name": "ankit",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:08.614Z",
-      "active": true
-    },
-    {
-      "id": "dccc",
-      "name": "ankit",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:16.499Z",
-      "active": true
-    },
-    {
-      "id": "e50d",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:22.432Z",
-      "active": true
-    },
-    {
-      "id": "d01d",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:23.787Z",
-      "active": true
-    },
-    {
-      "id": "a2dc",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:23.917Z",
-      "active": true
-    },
-    {
-      "id": "abb8",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:24.088Z",
-      "active": true
-    },
-    {
-      "id": "2bee",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:24.262Z",
-      "active": true
-    },
-    {
-      "id": "2e96",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:24.430Z",
-      "active": true
-    },
-    {
-      "id": "e7c6",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:24.578Z",
-      "active": true
-    },
-    {
-      "id": "50b1",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:24.747Z",
-      "active": true
-    },
-    {
-      "id": "c742",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:24.908Z",
-      "active": true
-    },
-    {
-      "id": "f90c",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:25.063Z",
-      "active": true
-    },
-    {
-      "id": "d898",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:27:25.345Z",
-      "active": true
-    },
-    {
-      "id": "24f5",
-      "name": "Ankit Kumar",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:31:46.234Z",
-      "active": true
-    },
-    {
-      "id": "a947",
-      "name": "Ankit Kumar",
-      "email": "abc@gmail.com",
-      "phone": "8888888888",
-      "subject": "kkkkkk",
-      "message": "fkhsdfjksdfjskfjshjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
-      "date": "2024-07-04T03:38:53.734Z",
-      "active": true
-    },
-    {
-      "id": "6eb7",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:01.168Z",
-      "active": true
-    },
-    {
-      "id": "fbfb",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:02.450Z",
-      "active": true
-    },
-    {
-      "id": "3cb7",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:02.730Z",
-      "active": true
-    },
-    {
-      "id": "851c",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:03.060Z",
-      "active": true
-    },
-    {
-      "id": "2af9",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:03.155Z",
-      "active": true
-    },
-    {
-      "id": "ce75",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:03.302Z",
-      "active": true
-    },
-    {
-      "id": "85a8",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:03.464Z",
-      "active": true
-    },
-    {
-      "id": "c07e",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:03.633Z",
-      "active": true
-    },
-    {
-      "id": "826c",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:03.802Z",
-      "active": true
-    },
-    {
-      "id": "e86a",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:04.055Z",
-      "active": true
-    },
-    {
-      "id": "d43a",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:04.324Z",
-      "active": true
-    },
-    {
-      "id": "0bad",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:04.421Z",
-      "active": true
-    },
-    {
-      "id": "4d56",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:04.582Z",
-      "active": true
-    },
-    {
-      "id": "9a7a",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:04.828Z",
-      "active": true
-    },
-    {
-      "id": "8caa",
-      "name": "",
-      "email": "",
-      "phone": "",
-      "subject": "",
-      "message": "",
-      "date": "2024-07-04T03:39:05.386Z",
-      "active": true
-    },
-    {
-      "id": "6b62",
+      "id": "9d31",
       "name": "Ankit Kumar",
       "email": "ankitkumar839282@gmail.com",
       "phone": "8392823395",
-      "subject": "about",
-      "message": "iioooooooooooooooooooooooooooooooooo",
-      "date": "2024-07-06T03:48:35.551Z",
+      "subject": "sample query",
+      "message": "lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti sed, eius voluptatum rerum maiores facere pariatur vero quaerat iste.\n",
+      "date": "2024-07-06T09:27:59.085Z",
+      "active": true
+    },
+    {
+      "id": "a671",
+      "name": "ajay kumar ",
+      "email": "ajy@gmail.com",
+      "phone": "9874563102",
+      "subject": "query",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti sed, eius voluptatum rerum maiores facere pariatur vero quaerat iste.\n",
+      "date": "2024-07-06T09:31:16.245Z",
+      "active": false
+    },
+    {
+      "id": "6e3b",
+      "name": "devesh verma",
+      "email": "devesh@gmail.com",
+      "phone": "7904578215",
+      "subject": "Mern DSA",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti sed, eius voluptatum rerum maiores facere pariatur vero quaerat iste.\n\n",
+      "date": "2024-07-06T09:32:08.932Z",
       "active": true
     }
   ],

@@ -43,6 +43,9 @@ import Checkout from "./Checkout";
 import Confirmation from "./Confirmation";
 import AdminNewsletter from "./Admin/Newsletter/AdminNewsletter";
 import AdminUserList from "./Admin/User/AdminUser";
+import AdminContactUs from "./Admin/ContactUs/AdminContactUs";
+import AdminContactUsShow from "./Admin/ContactUs/AdminContactUsShow";
+import AdminCheckout from "./Admin/CheckOut/AdminCheckout";
 
 export default function App() {
   return (
@@ -96,7 +99,14 @@ export default function App() {
 
               {/* NeswLetter Route */}
               <Route path='/admin/newsletter' element={<AdminNewsletter/>}/>
+
               <Route path='/admin/user' element={<AdminUserList/>}/>
+
+              <Route path='/admin/contact' element={<AdminContactUs/>}/>
+              <Route path='/admin/contact/show/:id' element={<AdminContactUsShow/>}/>
+
+              <Route path='/admin/checkout' element={<AdminCheckout/>}/>
+
 
 
               <Route path='/*' element={<Error/>}/>
