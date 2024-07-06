@@ -10,12 +10,14 @@ export default function Footer() {
   let dispatch =useDispatch()
 
   let NewsletterStateData=useSelector((state)=>state.NewsletterStateData)
+
 function postData(){
    let item =NewsletterStateData.find((x)=>x.email===email)
     if(item)
        setMassage(" Sorry !!  Your Email is alredy Registered")
     else{
       dispatch(createNewsletter({email:email, active:true}))
+      setEmail("")
       setMassage("Thanks !! For Subscribe ")
     }
 }
@@ -80,7 +82,7 @@ function postData(){
             <div className="position-relative mx-auto" style={{maxWidth:"400px"}}>
               <input
                 className="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-light"
-                type="text"
+                type="text" value={email}
                 placeholder="Your email"
                 onChange={(e)=>setEmail(e.target.value)}
               />

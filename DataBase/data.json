@@ -1401,7 +1401,18 @@
   ],
   "newsletter": [
     {
-      "id": "8ba7",
+      "id": "6590",
+      "email": "ankitkumar@gamil.com",
+      "active": true
+    },
+    {
+      "id": "541d",
+      "email": "avb@gamil.com",
+      "active": true
+    },
+    {
+      "id": "aca4",
+      "email": "abvc@gamil.com",
       "active": true
     }
   ],
@@ -1704,6 +1715,16 @@
       "subject": "",
       "message": "",
       "date": "2024-07-04T03:39:05.386Z",
+      "active": true
+    },
+    {
+      "id": "6b62",
+      "name": "Ankit Kumar",
+      "email": "ankitkumar839282@gmail.com",
+      "phone": "8392823395",
+      "subject": "about",
+      "message": "iioooooooooooooooooooooooooooooooooo",
+      "date": "2024-07-06T03:48:35.551Z",
       "active": true
     }
   ],

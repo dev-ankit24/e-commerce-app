@@ -39,6 +39,7 @@ function getAPIdata() {
     setData(NewsletterStateData);
     else 
     setData([])
+
   }
   useEffect(() => {
     getAPIdata();
