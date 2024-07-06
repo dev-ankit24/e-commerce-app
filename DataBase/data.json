@@ -1158,15 +1158,6 @@
       "role": "Buyer"
     },
     {
-      "id": "2179",
-      "name": "Parmanad",
-      "username": "Parmanad",
-      "email": "asdf4@gamil.com",
-      "phone": "9875632410",
-      "password": "Pkjha@123",
-      "role": "Buyer"
-    },
-    {
       "name": "Ankit Kumar",
       "phone": "8392823395",
       "address": "",
@@ -1406,14 +1397,9 @@
       "active": true
     },
     {
-      "id": "541d",
-      "email": "avb@gamil.com",
-      "active": true
-    },
-    {
       "id": "aca4",
       "email": "abvc@gamil.com",
-      "active": true
+      "active": false
     }
   ],
   "contact": [

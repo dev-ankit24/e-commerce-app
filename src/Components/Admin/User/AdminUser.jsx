@@ -3,50 +3,52 @@ import { DataGrid } from "@mui/x-data-grid";
 
 import SideBar from "../SideBar";
 
-import {getNewsletter, deleteNewsletter, updateNewsletter} from '../../../Store/ActionCreators/NewsletterActionCreators'
-import { useDispatch, useSelector } from "react-redux";
-export default function AdminNewsletter() {
+export default function AdminUserList() {
   let [data, setData] = useState([]);
 
   const columns = [
     { field: "id", headerName: "ID", width: 100 },
+    { field: "name", headerName: "Name", width: 150 },
+    { field: "username", headerName: "UserName", width: 100 },
+    { field: "role", headerName: "Role", width: 100 },
     { field: "email", headerName: "Email", width: 300 },
-    { field: "active", headerName: "Active", width: 100 , renderCell:({row})=>< p title="Click Update  Active Status" onClick={()=>updateData(row.id, row.active)} className={row.active?"text-success":"text-danger"}>{row.active?"Yes":"No"}</p>},
+    { field: "phone", headerName: "Phone", width: 150 },
     { field: "delete", headerName: "Delete", width: 100 , renderCell:({row})=><button className="btn btn-danger" onClick={()=>deleteData(row.id)}><i className="fa fa-trash"></i></button>}
   ];
   
-  let NewsletterStateData = useSelector((state)=>state.NewsletterStateData)
-  let dispatch=useDispatch()
+
 
   // Detele data table
  async function deleteData(id) {
     if (window.confirm("You Are Sure to Delete That Item : ")) {
-     dispatch(deleteNewsletter({id:id}))
+      let response = await fetch ("/user/"+id,{
+        method:"DELETE",
+        headers:{
+          "content-type":"application/json"
+        }
+      })
+      response = await response.json()
       getAPIdata();
     }
   }
-
-// Update Active Status
-async function updateData(id, status){
-  if(window.confirm("Are You Sure to Update Active Status :")){
-    let item = data.find((x)=>x.id===id)
-    dispatch(updateNewsletter({...item, active: !status}))
-    getAPIdata()
-  }
-    
-}
-
-function getAPIdata() {
-    dispatch(getNewsletter())
-    if(NewsletterStateData.length)
-    setData(NewsletterStateData);
+  
+async function getAPIdata() {
+  let response= await fetch("/user",{
+    method:"GET",
+    headers:{
+      "content-type":"application/json"
+    }
+  })
+  response = await response.json()
+    if(response)
+    setData(response);
     else 
     setData([])
 
   }
   useEffect(() => {
     getAPIdata();
-  }, [NewsletterStateData.length]);
+  }, []);
   return (
     <>
       <div className="container-fluid">
@@ -56,7 +58,7 @@ function getAPIdata() {
           </div>
           <div className="col-md-9">
             <h5 className="bg-primary text-light p-2 text-center">
-              NewsLetter{" "}
+              User List{" "}
               
             </h5>
             <div className="table-responsive">
