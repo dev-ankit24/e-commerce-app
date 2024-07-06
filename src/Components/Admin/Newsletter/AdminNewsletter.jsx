@@ -3,15 +3,15 @@ import { DataGrid } from "@mui/x-data-grid";
 
 import SideBar from "../SideBar";
 
-import {getNewsletter, deleteNewsletter} from '../../../Store/ActionCreators/NewsletterActionCreators'
+import {getNewsletter, deleteNewsletter, updateNewsletter} from '../../../Store/ActionCreators/NewsletterActionCreators'
 import { useDispatch, useSelector } from "react-redux";
 export default function AdminNewsletter() {
   let [data, setData] = useState([]);
 
   const columns = [
     { field: "id", headerName: "ID", width: 100 },
-    { field: "email", headerName: "Email", width: 250 },
-    { field: "active", headerName: "Active", width: 100 , renderCell:({row})=><p className={row.active?"text-success":"text-danger"}>{row.active?"Yes":"No"}</p>},
+    { field: "email", headerName: "Email", width: 300 },
+    { field: "active", headerName: "Active", width: 100 , renderCell:({row})=>< p title="Click Update  Active Status" onClick={()=>updateData(row.id, row.active)} className={row.active?"text-success":"text-danger"}>{row.active?"Yes":"No"}</p>},
     { field: "delete", headerName: "Delete", width: 100 , renderCell:({row})=><button className="btn btn-danger" onClick={()=>deleteData(row.id)}><i className="fa fa-trash"></i></button>}
   ];
   
@@ -19,12 +19,19 @@ export default function AdminNewsletter() {
   let dispatch=useDispatch()
 
   // Detele data table
-  async function deleteData(id) {
+ async function deleteData(id) {
     if (window.confirm("You Are Sure to Delete That Item : ")) {
      dispatch(deleteNewsletter({id:id}))
       getAPIdata();
     }
   }
+
+// Update Active Status
+async function updateData(id, status){
+  if(window.confirm("Are You Sure to Update Active Status :"))
+    dispatch(updateNewsletter({id:id, active: !status}))
+    getAPIdata()
+}
 
 function getAPIdata() {
     dispatch(getNewsletter())
