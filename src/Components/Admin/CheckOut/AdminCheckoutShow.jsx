@@ -8,12 +8,13 @@ import SideBar from "../SideBar";
 import { Link, useNavigate, useParams } from "react-router-dom";
 export default function AdminCheckoutShow() {
   let [data, setData] = useState({});
+  let [user ,setUser]=useState({})
   let {id} = useParams()
   let navigate =useNavigate()
 
   
-  let CheckoutStateData = useSelector((state)=>state.CheckoutStateData)
-  let dispatch=useDispatch()
+  // let CheckoutStateData = useSelector((state)=>state.CheckoutStateData)
+  // let dispatch=useDispatch()
 
   // Detele data table
  async function deleteData() {
@@ -24,7 +25,7 @@ export default function AdminCheckoutShow() {
   }
 async function updateData(){
   if(window.confirm("Are You Sure Update This Item:"))
-    dispatch(updateCheckout({...data, active:false}))
+    // dispatch(updateCheckout({...data, active:false}))
    setData((old)=>{
     return{
       ...old,
@@ -32,17 +33,44 @@ async function updateData(){
     }
    })
 }
-
+//get checkout data 
   useEffect(() => {
-    (()=>{
-      dispatch(getCheckout())
-      if(CheckoutStateData.length){
-        let item= CheckoutStateData.find((x)=>x.id===id)
+    (async()=>{
+       let response= await fetch("/checkout",{
+        method:"GET",
+        headers:{
+          "content-type":"application/json"
+        }
+       })
+       response= await response.json()
+       if(response.length)
+        var item= response.find((x)=>x.id===id)
+       console.log(item.user, "item")
         if(item)
-           setData(item)
-      }
+       console.log(item, "item")
+
+          setData(item)
+
     })()
-  }, [CheckoutStateData.length]);
+  }, [data.length]);
+
+  // user data get
+  useEffect(()=>{
+    (async ()=>{
+      let response= await fetch("/user",{
+        method:"GET",
+        headers:{
+          "content-type":"application/json"
+        }
+      })
+      response = await response.json()
+      let itm= response.find((x)=>x.id===data.id)
+      setUser(response)
+      setUser(itm),"jj"
+      console.log(user,"user");
+
+    })()
+  },[])
   return (
     <>
       <div className="container-fluid">
@@ -63,46 +91,87 @@ async function updateData(){
                     <td>{data.id}</td>
                   </tr>
                   <tr>
-                    <th>Name</th>
-                    <td>{data.name}</td>
+                    <th>User</th>
+                    <td>{data.user}</td>
                   </tr>
                   <tr>
-                    <th>Email</th>
-                    <td>{data.email}</td>
+                    <th>Order Status</th>
+                    <td>{data.oderStatus}</td>
                   </tr>
                   <tr>
-                    <th>Phone</th>
-                    <td>{data.phone}</td>
+                    <th>Payment Status</th>
+                    <td>{data.paymentStatus}</td>
                   </tr>
                   <tr>
-                    <th>Subject</th>
-                    <td>{data.subject}</td>
+                    <th>Payment Mode </th>
+                    <td>{data.paymentMode}</td>
                   </tr>
                   <tr>
-                    <th>Message</th>
-                    <td>{data.message}</td>
+                    <th>SubTotal </th>
+                    <td>&#8377; {data.subtotal} /-</td>
+                  </tr>
+                  <tr>
+                    <th>Shipping</th>
+                    <td> &#8377; {data.shipping} /-</td>
+                  </tr>
+                  <tr>
+                    <th>Total</th>
+                    <td>&#8377; {data.total} /-</td>
+                  </tr>
+                  <tr>
+                    <th>RPPID</th>
+                    <td> {data.rppid}</td>
                   </tr>
                   <tr>
                     <th>Date</th>
                     <td>{new Date(data.date).toLocaleString()}</td>
                   </tr>
                   <tr>
-                    <th>Active</th>
-                    <td>{data.active?<span className="text-success"> Yes</span>:<span className="text-danger">No</span>}</td>
-                  </tr>
-                  <tr>
                     <th colSpan={3}>
                     {
-                      data.active?
-                      <button onClick={updateData} className="btn btn-success w-100">Update Status</button>:
-                      <button onClick={deleteData} className="btn btn-danger w-100">Delete</button>
+                      data.oderStatus !=="Delivered" || data.paymentStatus==="Pending"?
+                      <button onClick={updateData} className="btn btn-success w-100">Update</button>:""
                     }
 
                     </th>
                     
                   </tr>
                 </tbody>
-               </table>              
+               </table>   
+               <h5 className="text-center p-2 text-light " style={{backgroundColor:"gray"}}>Order Products</h5>
+              <table className="table table-bordered">
+                <thead>
+                    <th>Pic</th>
+                    <th> Prodect Name</th>
+                    <th>Brand</th>
+                    <th>Color</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>QTY</th>
+                    <th>Total</th>
+                </thead>
+                <tbody>
+                  {
+                    data.products?.map((item, index)=>{
+                      return <tr key={index}>
+                            <td>
+                              <a href={item.pic} target="_blank" rel="noreferrer">
+                                <img src={item.pic} height={50}width={50} alt="product image" />
+                              </a>
+                            </td>
+                            <td>{item.name}</td>
+                            <td>{item.brand}</td>
+                            <td>{item.color}</td>
+                            <td>{item.size}</td>
+                            <td>{item.price}</td>
+                            <td>{item.qty}</td>
+                            <td>{item.total}</td>
+
+                      </tr>
+                    })
+                  }
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
