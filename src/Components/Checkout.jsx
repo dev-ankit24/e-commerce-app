@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getCart,deleteCart ,getProduct} from '../Store/ActionCreators/CartActionCreators'
+import { getCart,deleteCart } from '../Store/ActionCreators/CartActionCreators'
+import { getProduct } from '../Store/ActionCreators/ProductActionCreators'
 import { updateProductQuantity } from '../Store/ActionCreators/ProductActionCreators'
 import {createCheckout} from "../Store/ActionCreators/CheckoutActionCreators"
 import { Link, useNavigate } from 'react-router-dom'
@@ -19,6 +20,7 @@ import ProfileTable from './Partials/ProfileTable'
     let navigate =useNavigate()
     let CartStateData =useSelector((state)=>state.CartStateData)
     let ProductStateData =useSelector((state)=>state.ProductStateData)
+    console.log(ProductStateData)
 
     function placeOrder(){
         let item={
@@ -75,6 +77,12 @@ import ProfileTable from './Partials/ProfileTable'
         setCart([])
         })()
     },[CartStateData.length])
+
+    useEffect(()=>{
+        (()=>{
+            dispatch(getProduct())
+        })()
+    },[ProductStateData.length])
 
 //  API call Get User Data 
 useEffect(()=>{

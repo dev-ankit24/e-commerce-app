@@ -1,4 +1,4 @@
-import { CREATE_CHECKOUT, DELETE_CHECKOUT, GET_CHECKOUT } from "../Constant";
+import { CREATE_CHECKOUT, DELETE_CHECKOUT, GET_CHECKOUT, UPDATE_CHECKOUT } from "../Constant";
 
 export function createCheckout(data){
     return{
@@ -13,6 +13,12 @@ export function getCheckout(){
     }
 }
 
+export function updateCheckout(data){
+    return{
+        type:UPDATE_CHECKOUT,
+        payload: data
+    }
+}
 
 
 export function deleteCheckout(data){

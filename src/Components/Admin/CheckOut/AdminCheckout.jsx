@@ -2,53 +2,60 @@ import React, { useEffect, useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 
 import SideBar from "../SideBar";
-
-import {getCheckout, deleteCheckout} from '../../../Store/ActionCreators/CheckoutActionCreators'
-import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+// import {getCheckout, deleteCheckout} from '../../../Store/ActionCreators/CheckoutActionCreators'
+
 export default function AdminCheckout() {
   let [data, setData] = useState([]);
 
   const columns = [
     { field: "id", headerName: "ID", width: 60 },
-    { field: "user", headerName: "User", width: 100 },
-    { field: "email", headerName: "Email", width: 210 },
-    { field: "phone", headerName: "Phone", width: 105 },
+    { field: "user", headerName: "User", width: 90 },
+    { field: "oderStatus", headerName: "OrderStatus", width: 160},
+    { field: "paymentStatus", headerName: "Payment Status", width: 125 },
+    { field: "paymentMode", headerName: "Payment Mode", width: 110 },
+    { field: "subtotal", headerName: "SubTotal", width: 80 ,renderCell:({row})=><span>&#8377;{row.subtotal}</span>},
+    { field: "shipping", headerName: "Shipping", width: 80,renderCell:({row})=><span>&#8377;{row.shipping}</span> },
+    { field: "total", headerName: "Total", width: 105,renderCell:({row})=><span>&#8377;{row.total}</span> },
     { field: "date", headerName: "Date", width: 85 , renderCell:({row})=><span>{ new Date(row.date).toLocaleDateString()}</span>},
-    { field: "subject", headerName: "Subject", width: 130 },
-    { field: "message", headerName: "Message", width: 130 },
-    { field: "active", headerName: "Active", width: 50 , renderCell:({row})=>< p  className={row.active?"text-success":"text-danger"}>{row.active?"Yes":"No"}</p>},
-    { field: "view", headerName: "View", width: 50 , renderCell:({row})=><Link to={`/admin/contact/show/${row.id}` } className=" btn btn-success" > <i className="fa fa-eye "></i></Link>},
-    { field: "delete", headerName: "Delete", width: 100 , renderCell:({row})=>{
-      if(!row.active)
-        return <button className="btn btn-danger" onClick={()=>deleteData(row.id)}><i className="fa fa-trash"></i></button>
-    }}
+    { field: "view", headerName: "View", width: 50 , renderCell:({row})=><Link to={`/admin/checkout/show/${row.id}` } className=" btn btn-success" > <i className="fa fa-eye "></i></Link>},
+ 
   ];
   
-  let CheckoutStateData = useSelector((state)=>state.CheckoutStateData)
-  console.log(CheckoutStateData);
-  let dispatch=useDispatch()
+{ //  use for Redux
+  // let CheckoutStateData = useSelector((state)=>state.CheckoutStateData)
+  // let dispatch=useDispatch()
+// function getAPIdata() {
+//     dispatch(getCheckout())
+//     if(CheckoutStateData.length)
+//     setData(CheckoutStateData);
+//     else 
+//     setData([])
+//   }
+//   useEffect(() => {
+//     getAPIdata();
+//   }, [CheckoutStateData.length]);
+}
 
-  // Detele data table
- async function deleteData(id) {
-    if (window.confirm("You Are Sure to Delete That Item : ")) {
-     dispatch(deleteCheckout({id:id}))
-      getAPIdata();
+async function getAPIData(){
+  let response= await fetch("/checkout",{
+    method:"GET",
+    headers:{
+      "content-type":"application/json"
     }
-  }
+  })
+  response = await response.json()
+  if(response.length)
+    setData(response)
+  else
+  setData([])
+}
+useEffect(()=>{
+  (()=>{
+  getAPIData()
+  })()
+},[])
 
-
-function getAPIdata() {
-    dispatch(getCheckout())
-    if(CheckoutStateData.length)
-    setData(CheckoutStateData);
-    else 
-    setData([])
-
-  }
-  useEffect(() => {
-    getAPIdata();
-  }, [CheckoutStateData.length]);
   return (
     <>
       <div className="container-fluid">

@@ -46,6 +46,7 @@ import AdminUserList from "./Admin/User/AdminUser";
 import AdminContactUs from "./Admin/ContactUs/AdminContactUs";
 import AdminContactUsShow from "./Admin/ContactUs/AdminContactUsShow";
 import AdminCheckout from "./Admin/CheckOut/AdminCheckout";
+import AdminCheckoutShow from "./Admin/CheckOut/AdminCheckoutShow";
 
 export default function App() {
   return (
@@ -100,12 +101,14 @@ export default function App() {
               {/* NeswLetter Route */}
               <Route path='/admin/newsletter' element={<AdminNewsletter/>}/>
 
-              <Route path='/admin/user' element={<AdminUserList/>}/>
+              <Route path='/admin/user' element={<AdminUserList/> }/>
 
               <Route path='/admin/contact' element={<AdminContactUs/>}/>
               <Route path='/admin/contact/show/:id' element={<AdminContactUsShow/>}/>
 
               <Route path='/admin/checkout' element={<AdminCheckout/>}/>
+              <Route path="/admin/checkout/show/:id" element={<AdminCheckoutShow/>}/>
+
 
 
 

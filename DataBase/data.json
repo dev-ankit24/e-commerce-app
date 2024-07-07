@@ -194,7 +194,7 @@
       "finalPrice": 290,
       "discount": 11,
       "stock": "false",
-      "quantity": 295,
+      "quantity": 292,
       "description": "<p>hello&nbsp;&nbsp;</p>",
       "pic": [
         "/products/m3.webp",
@@ -214,7 +214,7 @@
       "finalPrice": 369,
       "discount": 11,
       "stock": true,
-      "quantity": 75,
+      "quantity": 73,
       "description": "<p>hello testf</p>",
       "pic": [
         "/products/m8.webp",
@@ -752,7 +752,7 @@
       "finalPrice": 670,
       "discount": 14,
       "stock": "false",
-      "quantity": 120,
+      "quantity": 119,
       "description": "<p>good&nbsp;</p>",
       "pic": [
         "/products/m8.webp"
@@ -923,7 +923,7 @@
       "finalPrice": 240,
       "discount": 4,
       "stock": "false",
-      "quantity": 114,
+      "quantity": 113,
       "description": "<p>good T-shirt</p>",
       "pic": [
         "/products/m1.webp"
@@ -980,7 +980,7 @@
       "finalPrice": 309,
       "discount": 12,
       "stock": "false",
-      "quantity": 44,
+      "quantity": 43,
       "description": "<p>good</p>",
       "pic": [
         "/products/m6.webp"
@@ -1037,7 +1037,7 @@
       "finalPrice": 237,
       "discount": 5,
       "stock": true,
-      "quantity": 21,
+      "quantity": 20,
       "description": "<p>gppp</p>",
       "pic": [
         "/products/c8.webp"
@@ -1415,6 +1415,796 @@
         }
       ],
       "date": "2024-07-06T10:08:23.200Z"
+    },
+    {
+      "id": "f528",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "b5ea",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 295,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-06T10:38:26.602Z"
+    },
+    {
+      "id": "95cf",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "b5ea",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 295,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-06T10:39:31.774Z"
+    },
+    {
+      "id": "0b5b",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "b5ea",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 295,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-06T10:40:26.865Z"
+    },
+    {
+      "id": "2e74",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 237,
+      "shipping": 60,
+      "total": 297,
+      "products": [
+        {
+          "id": "bf1b",
+          "user": "ae18",
+          "name": "Plaza for women And Girls",
+          "product": "e10c",
+          "brand": "Zara",
+          "color": "green",
+          "size": "32",
+          "pic": "/products/c8.webp",
+          "price": 237,
+          "qty": 1,
+          "stockQuantity": 21,
+          "total": 237
+        }
+      ],
+      "date": "2024-07-06T10:46:08.098Z"
+    },
+    {
+      "id": "01f8",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 670,
+      "shipping": 60,
+      "total": 730,
+      "products": [
+        {
+          "id": "2672",
+          "user": "ae18",
+          "name": "Shirt for Kids",
+          "product": "3930",
+          "brand": "Boss",
+          "color": "black",
+          "size": "20",
+          "pic": "/products/m8.webp",
+          "price": 670,
+          "qty": 1,
+          "stockQuantity": 120,
+          "total": 670
+        }
+      ],
+      "date": "2024-07-06T10:49:27.872Z"
+    },
+    {
+      "id": "136c",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 410,
+      "shipping": 60,
+      "total": 470,
+      "product": [
+        {
+          "id": "6205",
+          "user": "ae18",
+          "name": "T-Shirt For Men ",
+          "product": "5",
+          "brand": "Boss",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m4.webp",
+          "price": 410,
+          "qty": 1,
+          "stockQuantity": 454,
+          "total": 410
+        }
+      ],
+      "date": "2024-07-06T12:53:44.707Z"
+    },
+    {
+      "id": "5ec9",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 15845,
+      "shipping": 0,
+      "total": 15845,
+      "product": [
+        {
+          "id": "6205",
+          "user": "ae18",
+          "name": "T-Shirt For Men ",
+          "product": "5",
+          "brand": "Boss",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m4.webp",
+          "price": 410,
+          "qty": 1,
+          "stockQuantity": 454,
+          "total": 410
+        },
+        {
+          "id": "554f",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 1,
+          "stockQuantity": 53,
+          "total": 15435
+        }
+      ],
+      "date": "2024-07-06T12:54:37.117Z"
+    },
+    {
+      "id": "e4e8",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 16085,
+      "shipping": 0,
+      "total": 16085,
+      "product": [
+        {
+          "id": "6205",
+          "user": "ae18",
+          "name": "T-Shirt For Men ",
+          "product": "5",
+          "brand": "Boss",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m4.webp",
+          "price": 410,
+          "qty": 1,
+          "stockQuantity": 454,
+          "total": 410
+        },
+        {
+          "id": "554f",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 1,
+          "stockQuantity": 53,
+          "total": 15435
+        },
+        {
+          "id": "a964",
+          "user": "ae18",
+          "name": "T-Shirt for Kids",
+          "product": "90a9",
+          "brand": "Nike",
+          "color": "gary",
+          "size": "26",
+          "pic": "/products/m1.webp",
+          "price": 240,
+          "qty": 1,
+          "stockQuantity": 114,
+          "total": 240
+        }
+      ],
+      "date": "2024-07-06T12:55:23.525Z"
+    },
+    {
+      "id": "6c2b",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 46955,
+      "shipping": 0,
+      "total": 46955,
+      "product": [
+        {
+          "id": "6205",
+          "user": "ae18",
+          "name": "T-Shirt For Men ",
+          "product": "5",
+          "brand": "Boss",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m4.webp",
+          "price": 410,
+          "qty": 1,
+          "stockQuantity": 454,
+          "total": 410
+        },
+        {
+          "id": "554f",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 3,
+          "stockQuantity": 53,
+          "total": 46305
+        },
+        {
+          "id": "a964",
+          "user": "ae18",
+          "name": "T-Shirt for Kids",
+          "product": "90a9",
+          "brand": "Nike",
+          "color": "gary",
+          "size": "26",
+          "pic": "/products/m1.webp",
+          "price": 240,
+          "qty": 1,
+          "stockQuantity": 114,
+          "total": 240
+        }
+      ],
+      "date": "2024-07-06T12:55:50.297Z"
+    },
+    {
+      "id": "b465",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 46955,
+      "shipping": 0,
+      "total": 46955,
+      "product": [
+        {
+          "id": "6205",
+          "user": "ae18",
+          "name": "T-Shirt For Men ",
+          "product": "5",
+          "brand": "Boss",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m4.webp",
+          "price": 410,
+          "qty": 1,
+          "stockQuantity": 454,
+          "total": 410
+        },
+        {
+          "id": "554f",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 3,
+          "stockQuantity": 53,
+          "total": 46305
+        },
+        {
+          "id": "a964",
+          "user": "ae18",
+          "name": "T-Shirt for Kids",
+          "product": "90a9",
+          "brand": "Nike",
+          "color": "gary",
+          "size": "26",
+          "pic": "/products/m1.webp",
+          "price": 240,
+          "qty": 1,
+          "stockQuantity": 114,
+          "total": 240
+        }
+      ],
+      "date": "2024-07-06T12:56:28.534Z"
+    },
+    {
+      "id": "9dc9",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 46955,
+      "shipping": 0,
+      "total": 46955,
+      "products": [
+        {
+          "id": "6205",
+          "user": "ae18",
+          "name": "T-Shirt For Men ",
+          "product": "5",
+          "brand": "Boss",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m4.webp",
+          "price": 410,
+          "qty": 1,
+          "stockQuantity": 454,
+          "total": 410
+        },
+        {
+          "id": "554f",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 3,
+          "stockQuantity": 53,
+          "total": 46305
+        },
+        {
+          "id": "a964",
+          "user": "ae18",
+          "name": "T-Shirt for Kids",
+          "product": "90a9",
+          "brand": "Nike",
+          "color": "gary",
+          "size": "26",
+          "pic": "/products/m1.webp",
+          "price": 240,
+          "qty": 1,
+          "stockQuantity": 114,
+          "total": 240
+        }
+      ],
+      "date": "2024-07-06T12:57:41.539Z"
+    },
+    {
+      "id": "116b",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 46955,
+      "shipping": 0,
+      "total": 46955,
+      "products": [
+        {
+          "id": "6205",
+          "user": "ae18",
+          "name": "T-Shirt For Men ",
+          "product": "5",
+          "brand": "Boss",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m4.webp",
+          "price": 410,
+          "qty": 1,
+          "stockQuantity": 454,
+          "total": 410
+        },
+        {
+          "id": "554f",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 3,
+          "stockQuantity": 53,
+          "total": 46305
+        },
+        {
+          "id": "a964",
+          "user": "ae18",
+          "name": "T-Shirt for Kids",
+          "product": "90a9",
+          "brand": "Nike",
+          "color": "gary",
+          "size": "26",
+          "pic": "/products/m1.webp",
+          "price": 240,
+          "qty": 1,
+          "stockQuantity": 114,
+          "total": 240
+        }
+      ],
+      "date": "2024-07-06T12:58:01.826Z"
+    },
+    {
+      "id": "d43c",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 46955,
+      "shipping": 0,
+      "total": 46955,
+      "products": [
+        {
+          "id": "6205",
+          "user": "ae18",
+          "name": "T-Shirt For Men ",
+          "product": "5",
+          "brand": "Boss",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m4.webp",
+          "price": 410,
+          "qty": 1,
+          "stockQuantity": 454,
+          "total": 410
+        },
+        {
+          "id": "554f",
+          "user": "ae18",
+          "name": "Samsung F30A",
+          "product": "bf75",
+          "brand": "samsung",
+          "color": "SILVER",
+          "size": "14.25m",
+          "pic": "/products/i14.webp",
+          "price": 15435,
+          "qty": 3,
+          "stockQuantity": 53,
+          "total": 46305
+        },
+        {
+          "id": "a964",
+          "user": "ae18",
+          "name": "T-Shirt for Kids",
+          "product": "90a9",
+          "brand": "Nike",
+          "color": "gary",
+          "size": "26",
+          "pic": "/products/m1.webp",
+          "price": 240,
+          "qty": 1,
+          "stockQuantity": 114,
+          "total": 240
+        }
+      ],
+      "date": "2024-07-06T12:59:32.699Z"
+    },
+    {
+      "id": "c2d3",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 369,
+      "shipping": 60,
+      "total": 429,
+      "products": [
+        {
+          "id": "0b3a",
+          "user": "ae18",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "2xl",
+          "pic": "/products/m8.webp",
+          "price": 369,
+          "qty": 1,
+          "stockQuantity": 75,
+          "total": 369
+        }
+      ],
+      "date": "2024-07-06T13:00:10.924Z"
+    },
+    {
+      "id": "f273",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 599,
+      "shipping": 60,
+      "total": 659,
+      "products": [
+        {
+          "id": "476e",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 294,
+          "total": 290
+        },
+        {
+          "id": "9dc6",
+          "user": "ae18",
+          "name": " T-shirt for kids",
+          "product": "dd4d",
+          "brand": "Nike",
+          "color": "black",
+          "size": "20",
+          "pic": "/products/m6.webp",
+          "price": 309,
+          "qty": 1,
+          "stockQuantity": 44,
+          "total": 309
+        }
+      ],
+      "date": "2024-07-06T13:00:52.604Z"
+    },
+    {
+      "id": "c543",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "a42e",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 293,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-06T13:20:14.792Z"
+    },
+    {
+      "id": "c260",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "a42e",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 293,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-06T13:20:33.897Z"
+    },
+    {
+      "id": "9573",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "product": [
+        {
+          "id": "a42e",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 293,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-06T13:21:07.590Z"
+    },
+    {
+      "id": "41c0",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 369,
+      "shipping": 60,
+      "total": 429,
+      "product": [
+        {
+          "id": "1ad1",
+          "user": "ae18",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "2xl",
+          "pic": "/products/m8.webp",
+          "price": 369,
+          "qty": 1,
+          "stockQuantity": 74,
+          "total": 369
+        }
+      ],
+      "date": "2024-07-06T13:21:42.918Z"
+    },
+    {
+      "id": "278f",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 369,
+      "shipping": 60,
+      "total": 429,
+      "products": [
+        {
+          "id": "dba1",
+          "user": "ae18",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "2xl",
+          "pic": "/products/m8.webp",
+          "price": 369,
+          "qty": 1,
+          "stockQuantity": 74,
+          "total": 369
+        }
+      ],
+      "date": "2024-07-06T13:23:01.832Z"
+    },
+    {
+      "id": "e0ff",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 240,
+      "shipping": 60,
+      "total": 300,
+      "products": [
+        {
+          "id": "77a9",
+          "user": "ae18",
+          "name": "T-Shirt for Kids",
+          "product": "90a9",
+          "brand": "Nike",
+          "color": "gary",
+          "size": "26",
+          "pic": "/products/m1.webp",
+          "price": 240,
+          "qty": 1,
+          "stockQuantity": 114,
+          "total": 240
+        }
+      ],
+      "date": "2024-07-06T13:47:48.683Z"
+    },
+    {
+      "id": "072c",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "3fe3",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 293,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-06T13:48:35.480Z"
     }
   ],
   "newsletter": [

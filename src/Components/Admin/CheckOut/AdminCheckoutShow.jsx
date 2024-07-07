@@ -3,10 +3,10 @@ import React, { useEffect, useState } from "react";
 
 import SideBar from "../SideBar";
 
-import {getCheckout, updateCheckout} from '../../../Store/ActionCreators/CheckoutActionCreators'
-import { useDispatch, useSelector } from "react-redux";
+// import {getCheckout, updateCheckout} from '../../../Store/ActionCreators/CheckoutActionCreators'
+// import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from "react-router-dom";
-export default function AdminChekoutShow() {
+export default function AdminCheckoutShow() {
   let [data, setData] = useState({});
   let {id} = useParams()
   let navigate =useNavigate()
@@ -52,7 +52,7 @@ async function updateData(){
           </div>
           <div className="col-md-9">
             <h5 className="bg-warning text-dark p-2 text-center">
-              Checkout Query{" "}
+              Checkout Query
               
             </h5>
             <div className="table-responsive">
