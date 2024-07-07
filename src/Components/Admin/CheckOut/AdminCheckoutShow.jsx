@@ -45,32 +45,21 @@ async function updateData(){
        response= await response.json()
        if(response.length)
         var item= response.find((x)=>x.id===id)
-       console.log(item.user, "item")
         if(item)
-       console.log(item, "item")
-
           setData(item)
 
+          // get user data by usr id
+          let response1= await fetch("/user/"+item.user,{
+            method:"GET",
+            headers:{
+              "content-type":"application/json"
+            }
+          })
+          response1 = await response1.json()
+          setUser(response1)
     })()
   }, [data.length]);
 
-  // user data get
-  useEffect(()=>{
-    (async ()=>{
-      let response= await fetch("/user",{
-        method:"GET",
-        headers:{
-          "content-type":"application/json"
-        }
-      })
-      response = await response.json()
-      let itm= response.find((x)=>x.id===data.id)
-      setUser(response)
-      setUser(itm),"jj"
-      console.log(user,"user");
-
-    })()
-  },[])
   return (
     <>
       <div className="container-fluid">
@@ -92,7 +81,12 @@ async function updateData(){
                   </tr>
                   <tr>
                     <th>User</th>
-                    <td>{data.user}</td>
+                    <address>
+                    <td>{user.name}<br />
+                    {user.phone}<br />{user.email} , <br />
+                    {user.address}<br />
+                    {user.city},{user.pin}, {user.state}</td><br />
+                    </address>
                   </tr>
                   <tr>
                     <th>Order Status</th>
