@@ -63,16 +63,24 @@ export default function App() {
               <Route path='/login' element={<Login/>}/>
               
               {/* Buyer routes.(user) */}
-              <Route path='/profile' element={<Profile/>}/>
+              {/* route gaurd */}
+             {
+              localStorage.getItem("login")?
+              <>
+               <Route path='/profile' element={<Profile/>}/>
               <Route path='/update-profile' element={<UpdateProfile/>}/>
               <Route path='/cart' element={<Cart/>}/>
               <Route path='/checkout' element={<Checkout/>}/>
               <Route path='/confirmation' element={<Confirmation/>}/>
-
+              </>:""
+             }
               {/* admin routes */}
               <Route path='/admin' element={<AdminHome/>}/>
 
-              {/* Admin Maincatgory route */}
+              {
+                localStorage.getItem("login") && localStorage.getItem("role")==="Admin"?
+                <>
+                {/* Admin Maincatgory route */}
               <Route path='/admin/maincategory' element={<AdminMainCategory/>}/>
               <Route path='/admin/maincategory/create' element={<AdminCreateMainCategory/>}/>
               <Route path='/admin/maincategory/update/:id' element={<AdminUpdateMainCategory/>}/>
@@ -109,6 +117,8 @@ export default function App() {
               <Route path='/admin/checkout' element={<AdminCheckout/>}/>
               <Route path="/admin/checkout/show/:id" element={<AdminCheckoutShow/>}/>
 
+                </>:""
+              }
 
 
 
