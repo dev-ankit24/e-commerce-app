@@ -3,33 +3,29 @@ import React, { useEffect, useState } from "react";
 
 import SideBar from "../SideBar";
 
-// import {getCheckout, updateCheckout} from '../../../Store/ActionCreators/CheckoutActionCreators'
-// import { useDispatch, useSelector } from "react-redux";
+import { updateCheckout} from '../../../Store/ActionCreators/CheckoutActionCreators'
+import { useDispatch, } from "react-redux";
 import { Link, useNavigate, useParams } from "react-router-dom";
 export default function AdminCheckoutShow() {
   let [data, setData] = useState({});
   let [user ,setUser]=useState({})
+  let [paymentStatus, setPaymentStatus]=useState("")
+  let [oderStatus,setOrderStatus]=useState("")
   let {id} = useParams()
   let navigate =useNavigate()
 
   
   // let CheckoutStateData = useSelector((state)=>state.CheckoutStateData)
-  // let dispatch=useDispatch()
+  let dispatch=useDispatch()
 
-  // Detele data table
- async function deleteData() {
-    if (window.confirm("You Are Sure to Delete That Item : ")) {
-      navigate("/admin/contact")
-    
-    }
-  }
 async function updateData(){
-  if(window.confirm("Are You Sure Update This Item:"))
-    // dispatch(updateCheckout({...data, active:false}))
+  if(window.confirm("Are You Sure Update Payment or Order Status :"))
+    dispatch(updateCheckout({...data, oderStatus:oderStatus, paymentStatus:paymentStatus}))
    setData((old)=>{
     return{
       ...old,
-      active:false
+      oderStatus:oderStatus,
+      paymentStatus:paymentStatus
     }
    })
 }
@@ -45,6 +41,7 @@ async function updateData(){
        response= await response.json()
        if(response.length)
         var item= response.find((x)=>x.id===id)
+        setOrderStatus(item)
         if(item)
           setData(item)
 
@@ -90,11 +87,36 @@ async function updateData(){
                   </tr>
                   <tr>
                     <th>Order Status</th>
-                    <td>{data.oderStatus}</td>
+                    <td>{data.oderStatus}
+                      {
+                        data.oderStatus !=="Delivered"?
+                        <>
+                        <br />
+                        <select name="oderstatus"  value={oderStatus} onChange={(e)=>setOrderStatus(e.target.value)} className="form-select border-2 border-pramary">
+                          <option >Order is Placed</option>
+                          <option >Order is Packed</option>
+                          <option >Order to Ship</option>
+                          <option >Out Of Delivery </option>
+                          <option >Delivered</option>
+                        </select>
+                        </>:""
+                      }
+                    </td>
                   </tr>
                   <tr>
                     <th>Payment Status</th>
-                    <td>{data.paymentStatus}</td>
+                    <td>{data.paymentStatus}
+                      {
+                        data.paymentStatus !== "Payment Done"?
+                        <>
+                        <br />
+                        <select name="paymentStatus" value={paymentStatus} onChange={(e)=>setPaymentStatus(e.target.value)} className="form-select border-2 border-primary">
+                          <option>Pending</option>
+                          <option> Payment Done</option>
+                        </select>
+                        </>:""
+                      }
+                    </td>
                   </tr>
                   <tr>
                     <th>Payment Mode </th>
@@ -124,7 +146,9 @@ async function updateData(){
                     <th colSpan={3}>
                     {
                       data.oderStatus !=="Delivered" || data.paymentStatus==="Pending"?
-                      <button onClick={updateData} className="btn btn-success w-100">Update</button>:""
+                      <button onClick={updateData} className="btn btn-success w-100">Update</button>
+                      :
+                      <Link to="/admin/checkout"className="btn btn-warning w-100">Admin Checkout <i className="fa fa-backward"></i></Link>
                     }
 
                     </th>
