@@ -105,37 +105,20 @@ export default function AdminCreateMainCategory() {
               <div className="row">
                 <div className="col-md-6 mb-3">
                   <label>Name*</label>
-                  <input
-                    type="text"
-                    name="name"
-                    onChange={getInputData}
-                    placeholder="MainCategory Name"
-                    className="form-control"
+                  <input type="text" name="name" onChange={getInputData} placeholder="MainCategory Name" className={`form-control border border-primary ${show && errorMassage.name?"border-2 border-danger":" border-2 border-primary"}`}
                   />
-                  {show && errorMassage.length ? (
-                    <p className="text-danger text-capitalize">
-                      {errorMassage}
-                    </p>
-                  ) : (
-                    ""
-                  )}
+                  {show && errorMassage.length ?<p className="text-danger text-capitalize">{errorMassage}</p>:""}
                 </div>
                 <div className="col-md-6 mb-3">
                   <label>Active*</label>
-                  <select
-                    name="active"
-                    onChange={getInputData}
-                    className="form-select"
-                  >
+                  <select   name="active"onChange={getInputData} className="form-select" >
                     <option value="true">Yes</option>
                     <option value="false">No</option>
                   </select>
                 </div>
               </div>
               <div className="mb-3">
-                <button type="submit" className="btn btn-primary p-2 w-100">
-                  Create
-                </button>
+                <button type="submit" className="btn btn-primary p-2 w-100">  Create</button>
               </div>
             </form>
           </div>

@@ -46,7 +46,7 @@ export default function AdminProduct() {
   let dispatch=useDispatch()
 
   // Detele data table
-  async function deleteData(id) {
+   function deleteData(id) {
     if (window.confirm("You Are Sure to Delete That Item : ")) {
      dispatch(deleteProduct({id:id}))
       getAPIdata();

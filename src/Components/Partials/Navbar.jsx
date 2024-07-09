@@ -41,13 +41,13 @@ function logout(){
               >
                 <i className="fab fa-facebook-f"></i>
               </Link>
-              <a className="btn btn-square border-end" href="#">
+              <a className="btn btn-square border-end" target="_blank" href="#">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a className="btn btn-square border-end" href="#">
+              <a className="btn btn-square border-end" target="_blank" href="#">
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a className="btn btn-square border-end" href="#">
+              <a className="btn btn-square border-end" target="_blank" href="#">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>

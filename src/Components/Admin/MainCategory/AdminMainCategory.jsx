@@ -21,7 +21,7 @@ export default function AdminMainCategory() {
   let dispatch=useDispatch()
 
   // Detele data table
-  async function deleteData(id) {
+   function deleteData(id) {
     if (window.confirm("You Are Sure to Delete That Item : ")) {
      dispatch(deleteMaincategory({id:id}))
       getAPIdata();

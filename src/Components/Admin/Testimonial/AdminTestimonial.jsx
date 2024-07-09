@@ -27,7 +27,7 @@ export default function AdminTestimonial() {
   let dispatch=useDispatch()
 
   // Detele data table
-  async function deleteData(id) {
+   function deleteData(id) {
     if (window.confirm("You Are Sure to Delete That Item : ")) {
      dispatch(deleteTestimonial({id:id}))
       getAPIdata();

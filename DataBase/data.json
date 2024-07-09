@@ -152,6 +152,12 @@
       "name": "samsung",
       "pic": "/brands/i14.webp",
       "active": true
+    },
+    {
+      "id": "a6f7",
+      "name": "nike1",
+      "pic": "/brands/aaaa.png",
+      "active": true
     }
   ],
   "product": [
@@ -194,7 +200,7 @@
       "finalPrice": 290,
       "discount": 11,
       "stock": "false",
-      "quantity": 292,
+      "quantity": 291,
       "description": "<p>hello&nbsp;&nbsp;</p>",
       "pic": [
         "/products/m3.webp",
@@ -828,7 +834,7 @@
       "finalPrice": 31812,
       "discount": 11,
       "stock": true,
-      "quantity": 354,
+      "quantity": 353,
       "description": "<h2>MyTitleMyTitleMyTitle</h2>\r\n<p>Paragraph 1 </p>\r\n<p>Paragraph 2 </p>\r\n<p>Paragraph 3 </p>\r\n<p>Paragraph 4 </p>\r\n<p>Paragraph 5 </p>",
       "pic": [
         "/products/i15.webp"
@@ -2205,6 +2211,60 @@
         }
       ],
       "date": "2024-07-06T13:48:35.480Z"
+    },
+    {
+      "id": "37be",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "65a5",
+          "user": "ae18",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 292,
+          "total": 290
+        }
+      ],
+      "date": "2024-07-08T13:08:54.270Z"
+    },
+    {
+      "id": "2f80",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 31812,
+      "shipping": 0,
+      "total": 31812,
+      "products": [
+        {
+          "id": "5bee",
+          "user": "ae18",
+          "name": "Samsung Galaxy A30 5G",
+          "product": "8176",
+          "brand": "samsung",
+          "color": "white",
+          "size": "14.5cm",
+          "pic": "/products/i15.webp",
+          "price": 31812,
+          "qty": 1,
+          "stockQuantity": 354,
+          "total": 31812
+        }
+      ],
+      "date": "2024-07-08T13:11:35.542Z"
     }
   ],
   "newsletter": [

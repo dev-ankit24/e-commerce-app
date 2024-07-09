@@ -19,7 +19,7 @@ export default function AdminNewsletter() {
   let dispatch=useDispatch()
 
   // Detele data table
- async function deleteData(id) {
+ function deleteData(id) {
     if (window.confirm("You Are Sure to Delete That Item : ")) {
      dispatch(deleteNewsletter({id:id}))
       getAPIdata();
@@ -27,7 +27,7 @@ export default function AdminNewsletter() {
   }
 
 // Update Active Status
-async function updateData(id, status){
+ function updateData(id, status){
   if(window.confirm("Are You Sure to Update Active Status :")){
     let item = data.find((x)=>x.id===id)
     dispatch(updateNewsletter({...item, active: !status}))

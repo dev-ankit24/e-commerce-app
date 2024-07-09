@@ -16,7 +16,6 @@ function Profile() {
 
     let WishlistStateData =useSelector((state)=>state.WishlistStateData)
     let CheckoutStateData =useSelector((state)=>state.CheckoutStateData)
-    console.log(CheckoutStateData);
 
     // Api CAll By Get User data
     useEffect(()=>{
@@ -63,6 +62,7 @@ function Profile() {
         (()=>{
             dispatch(getCheckout())
         if(CheckoutStateData.length)
+            console.log(CheckoutStateData)
             setOrders(CheckoutStateData.filter((x)=>x.user===localStorage.getItem("userid")))
     
             

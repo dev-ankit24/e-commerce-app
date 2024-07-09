@@ -29,7 +29,7 @@ export default function AdminContactUs() {
   let dispatch=useDispatch()
 
   // Detele data table
- async function deleteData(id) {
+  function deleteData(id) {
     if (window.confirm("You Are Sure to Delete That Item : ")) {
      dispatch(deleteContactUs({id:id}))
       getAPIdata();

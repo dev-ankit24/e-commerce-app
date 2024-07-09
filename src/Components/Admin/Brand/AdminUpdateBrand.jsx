@@ -128,26 +128,14 @@ export default function AdminUpdateBrand() {
               <div className="row">
                 <div className="col-md-6 mb-3">
                   <label>Name*</label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={data.name}
-                    onChange={getInputData}
-                    placeholder="Brand Name"
-                    className="form-control"
+                <input  type="text"  name="name"  value={data.name}  onChange={getInputData}  placeholder="Brand Name"  className={`form-control border border-primary ${show && errorMassage.name?"border-2 border-danger":" border-2 border-primary"}`}
                   />
-                  {show && errorMassage.length ? (
-                    <p className="text-danger text-capitalize">
-                      {errorMassage}
-                    </p>
-                  ) : (
-                    ""
-                  )}
+                  {show && errorMassage.length ? <p className="text-danger text-capitalize">{errorMassage} </p>:"" }
                 </div>
 
                 <div className="col-md-6 mb-3">
                   <label>Pic</label>
-                  <input type="file" name="pic" onChange={getInputData} className="form-control" />
+                  <input type="file" name="pic" onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.pic?"border-2 border-danger":" border-2 border-primary"}`} />
                   {show && errorMassage.pic ? (
                     <p className="text-danger text-capitalize">
                       {errorMassage.pic}

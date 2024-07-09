@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import SideBar from "../SideBar";
 
-import {getContactUs, deleteContactUs, updateContactUs} from '../../../Store/ActionCreators/ContactUsActionCreators'
+import {getContactUs, updateContactUs} from '../../../Store/ActionCreators/ContactUsActionCreators'
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 export default function AdminContactUsShow() {
   let [data, setData] = useState({});
   let {id} = useParams()
@@ -15,13 +15,13 @@ export default function AdminContactUsShow() {
   let dispatch=useDispatch()
 
   // Detele data table
- async function deleteData() {
+  function deleteData() {
     if (window.confirm("You Are Sure to Delete That Item : ")) {
       navigate("/admin/contact")
     
     }
   }
-async function updateData(){
+ function updateData(){
   if(window.confirm("Are You Sure Update This Item:"))
     dispatch(updateContactUs({...data, active:false}))
    setData((old)=>{

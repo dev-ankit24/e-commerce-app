@@ -5,14 +5,14 @@ import SideBar from "../SideBar";
 
 import { updateCheckout} from '../../../Store/ActionCreators/CheckoutActionCreators'
 import { useDispatch, } from "react-redux";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 export default function AdminCheckoutShow() {
   let [data, setData] = useState({});
   let [user ,setUser]=useState({})
   let [paymentStatus, setPaymentStatus]=useState("")
   let [oderStatus,setOrderStatus]=useState("")
   let {id} = useParams()
-  let navigate =useNavigate()
+
 
   
   // let CheckoutStateData = useSelector((state)=>state.CheckoutStateData)
