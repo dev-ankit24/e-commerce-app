@@ -107,27 +107,27 @@ export default function SignUp() {
             <form onSubmit={postData}>
               <div className="row">
                 <div className="col-md-6 my-2">
-                  <input  type="text"  name="name"  onChange={getInputData}  className="form-control border-primary border-2"  placeholder="Full Name"/>
+                  <input  type="text"  name="name"  onChange={getInputData}  className={`form-control border border-primary ${show && errorMassage.name?"border-2 border-danger":" border-2 border-primary"}`}  placeholder="Full Name"/>
                   {show && errorMassage.name ?<p className="text-danger">{errorMassage.name}</p>:""}
                 </div>
                 <div className="col-md-6 my-2">
-                  <input type="text" name="username" onChange={getInputData} className="form-control border-primary border-2" placeholder="UserName"/>
+                  <input type="text" name="username" onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.username?"border-2 border-danger":" border-2 border-primary"}`} placeholder="UserName"/>
                   {show && errorMassage.username ? <p className="text-danger">{errorMassage.username}</p>:""}
                 </div>
                 <div className="col-md-6 my-2">
-                  <input name="email" onChange={getInputData} type="email" className="form-control border-primary border-2" placeholder="Email"/>
+                  <input name="email" onChange={getInputData} type="email" className={`form-control border border-primary ${show && errorMassage.email?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Email"/>
                   {show && errorMassage.email ? <p className="text-danger">{errorMassage.email}</p> : ""}
                 </div>
                 <div className="col-md-6 my-2">
-                  <input  type="number"  name="phone"  onChange={getInputData}  className="form-control border-primary border-2"  placeholder="Phone Number"/>
+                  <input  type="number"  name="phone"  onChange={getInputData}  className={`form-control border border-primary ${show && errorMassage.phone?"border-2 border-danger":" border-2 border-primary"}`}  placeholder="Phone Number"/>
                   {show && errorMassage.phone ?<p className="text-danger">{errorMassage.phone}</p>:""}
                 </div>
                 <div className="col-md-6 my-2">
-                  <input  type="password"  name="password"  onChange={getInputData}  className="form-control border-primary border-2"  placeholder="Password " />
+                  <input  type="password"  name="password"  onChange={getInputData}  className={`form-control border border-primary ${show && errorMassage.password?"border-2 border-danger":" border-2 border-primary"}`}  placeholder="Password " />
                   {show && errorMassage.password ?<p className="text-danger">{errorMassage.password}</p>:""}
                 </div>
                 <div className="col-md-6 my-2">
-                  <input type="password" name="cpassword" onChange={getInputData} className="form-control border-primary border-2" placeholder="Confirm Password"/>
+                  <input type="password" name="cpassword" onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.password?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Confirm Password"/>
                   {show && errorMassage.password ? <p className="text-danger">{errorMassage.password}</p>:""}
                 </div>
               </div>

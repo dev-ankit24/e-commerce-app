@@ -79,12 +79,12 @@ async function postData(e){
                 <form onSubmit={postData} >
                     <div className="row">
                         <div className="col-md-6 my-2">
-                            <input type="text" name='username' onChange={getInputData} className='form-control border-primary border-2' placeholder='User Name'  />
+                            <input type="text" name='username' onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.username?"border-2 border-danger":" border-2 border-primary"}`} placeholder='User Name'  />
                             {show && errorMassage.username?<p className='text-danger'>{errorMassage.username}</p>:""}
                         </div>
                         <div className="col-md-6 my-2">
-                            <input type="password" name='password' onChange={getInputData} className='form-control border-primary border-2' placeholder='Password '  />
-                            {show && errorMassage.password ? <p className='text-danger'>{errorMassage.password}</p>:""}
+                            <input type="password" name='password' onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.password?"border-2 border-danger":" border-2 border-primary"}`} placeholder='Password '  />
+                            { show && errorMassage.password ? <p className='text-danger'>{errorMassage.password}</p>:""}
                         </div>
                        
                     </div>

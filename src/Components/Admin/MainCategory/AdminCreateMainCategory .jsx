@@ -105,13 +105,13 @@ export default function AdminCreateMainCategory() {
               <div className="row">
                 <div className="col-md-6 mb-3">
                   <label>Name*</label>
-                  <input type="text" name="name" onChange={getInputData} placeholder="MainCategory Name" className={`form-control border border-primary ${show && errorMassage.name?"border-2 border-danger":" border-2 border-primary"}`}
+                  <input type="text" name="name" onChange={getInputData} placeholder="MainCategory Name" className={`form-control border border-primary ${show && errorMassage.length?"border-2 border-danger":" border-2 border-primary"}`}
                   />
                   {show && errorMassage.length ?<p className="text-danger text-capitalize">{errorMassage}</p>:""}
                 </div>
                 <div className="col-md-6 mb-3">
                   <label>Active*</label>
-                  <select   name="active"onChange={getInputData} className="form-select" >
+                  <select   name="active"onChange={getInputData} className="form-select border-2 border-primary" >
                     <option value="true">Yes</option>
                     <option value="false">No</option>
                   </select>

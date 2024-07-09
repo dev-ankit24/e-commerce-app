@@ -165,7 +165,7 @@ export default function AdminCreateProduct() {
                 <div className="row">
                     <div className="col-md-3 col-sm-6 mb-3">
                       <label >MainCategory</label>
-                      <select name="maincategory"  onChange={getInputData} className="form-select border border-primary">
+                      <select name="maincategory"  onChange={getInputData} className="form-select border-2 border-primary">
                         {
                           MaincategoryStateData.map((item, index)=>{
                             return <option key={index} value={item.name}>{item.name}</option>
@@ -176,7 +176,7 @@ export default function AdminCreateProduct() {
 
                     <div className="col-md-3 col-sm-6 mb-3">
                       <label>SubCategory</label>
-                      <select name="subcategory"  onChange={getInputData} className="form-select  border border-primary">
+                      <select name="subcategory"  onChange={getInputData} className="form-select  border-2 border-primary">
                         {
                           SubcategoryStateData.map((item, index)=>{
                             return <option key={index} value={item.name}>{item.name}</option>
@@ -187,7 +187,7 @@ export default function AdminCreateProduct() {
 
                     <div className="col-md-3 col-sm-6 mb-3">
                       <label >Brand</label>
-                      <select name="brand"  onChange={getInputData} className="form-select border border-primary">
+                      <select name="brand"  onChange={getInputData} className="form-select border-2 border-primary">
                         {BrandStateData.map((item, index)=>{
                           return <option value={item.name} key={index}>{item.name}</option>
                         })}
@@ -196,7 +196,7 @@ export default function AdminCreateProduct() {
 
                     <div className="col-md-3 col-sm-6 mb-3">
                        <label >Stock*</label>
-                       <select name="stock"   onChange={getInputData} className="form-select ">
+                       <select name="stock"   onChange={getInputData} className="form-select border-2 border-primary ">
                         <option value="true">In Stock</option>
                         <option value="false">Out of Stock</option>
                        </select>
@@ -206,12 +206,12 @@ export default function AdminCreateProduct() {
                 <div className="row">
                   <div className="col-md-6 mb-3" >
                     <label>Color*</label>
-                    <input type="text"  onChange={getInputData} name="color" className={`form-control border border-primary ${show && errorMassage.color?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Enter Color" />
+                    <input type="text"  onChange={getInputData} name="color" className={`form-control border-2 border-primary ${show && errorMassage.color?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Enter Color" />
                     {show && errorMassage.color? <p className="text-danger text-capitalize">{errorMassage.color}</p>:""}
                   </div>
                   <div className="col-md-6 mb-3" >
                     <label>Size*</label>
-                    <input type="text" name="size"  onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.size?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Enter Size" />
+                    <input type="text" name="size"  onChange={getInputData} className={`form-control border-2 border-primary ${show && errorMassage.size?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Enter Size" />
                     {show && errorMassage.size ? <p className="text-danger text-capitalize">{errorMassage.size}</p>:""}
                   </div>
                 </div>
@@ -219,12 +219,12 @@ export default function AdminCreateProduct() {
                 <div className="row">
                   <div className="col-md-6 mb-3" >
                     <label>BasePrice*</label>
-                    <input type="number" name="basePrice"  onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.basePrice?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Enter BasePrice" />
+                    <input type="number" name="basePrice"  onChange={getInputData} className={`form-control border-2 border-primary ${show && errorMassage.basePrice?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Enter BasePrice" />
                     {show && errorMassage.basePrice? <p className="text-danger text-capitalize">{errorMassage.basePrice}</p>:""}
                   </div>
                   <div className="col-md-6 mb-3" >
                     <label>Discount*</label>
-                    <input type="number" name="discount"  onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.discount?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Enter discount " />
+                    <input type="number" name="discount"  onChange={getInputData} className={`form-control border-2 border-primary ${show && errorMassage.discount?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Enter discount " />
                     {show && errorMassage.discount? <p className="text-danger text-capitalize">{errorMassage.discount}</p>:""}
                   </div>
                 </div>
@@ -243,7 +243,7 @@ export default function AdminCreateProduct() {
                   </div>
                  <div className="col-md-6 mb-3">  
                    <label>Stock Quantity*</label>
-                  <input type="number" name="quantity" onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.quantity?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Stock Quantity"/>
+                  <input type="number" name="quantity" onChange={getInputData} className={`form-control border-2 border-primary ${show && errorMassage.quantity?"border-2 border-danger":" border-2 border-primary"}`} placeholder="Stock Quantity"/>
                   {show && errorMassage.quantity ?<p className="text-danger text-capitalize">{errorMassage.quantity}</p>:""}
                   </div>
                  
@@ -252,7 +252,7 @@ export default function AdminCreateProduct() {
               <div className="row">
               <div className="col-md-6 mb-3">
                   <label>Active*</label>
-                  <select  name="active"  onChange={getInputData}  className="form-select">
+                  <select  name="active"  onChange={getInputData}  className="form-select border-2 border-primary">
                     <option value="true">Yes</option>
                     <option value="false">No</option>
                   </select>

@@ -80,35 +80,26 @@ export default function AdminCreateTestimonial() {
               <div className="row">
                 <div className="col-md-6 mb-3">
                   <label>Name*</label>
-                  <input type="text" name="name" onChange={getInputData}placeholder="TestimonialName"className="form-control border border-primary" />
+                  <input type="text" name="name" onChange={getInputData}placeholder="TestimonialName"className={`form-control border border-primary ${show && errorMassage.name?"border-2 border-danger":" border-2 border-primary"}`} />
                   {show && errorMassage.name ? <p className="text-danger text-capitalize">{errorMassage.name}</p>:""}
                 </div>
                 <div className="col-md-6 mb-3">
                   <label>Pic*</label>
-                  <input type="file" name="pic" onChange={getInputData} className="form-control border border-primary" />
-                  {show && errorMassage.pic ? (
-                    <p className="text-danger text-capitalize">
-                      {errorMassage.pic}
-                    </p>
-                  ) : (
-                    ""
-                  )}
+                  <input type="file" name="pic" onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.pic?"border-2 border-danger":" border-2 border-primary"}`} />
+                  {show && errorMassage.pic ?<p className="text-danger text-capitalize">{errorMassage.pic}</p>:""}
+            
                  
                 </div>
               </div>
               <div className="mb-3">
               <label>Message</label>
-                <textarea name="message" placeholder="Message....." onChange={getInputData} className="form-control" rows={3}/>
+                <textarea name="message" placeholder="Message....." onChange={getInputData} className={`form-control border border-primary ${show && errorMassage.message?"border-2 border-danger":" border-2 border-primary"}`} rows={3}/>
                 {show && errorMassage.message ?<p className="text-danger text-capitalize">{errorMassage.message}</p>: "" }
               </div>
               <div className="row">
               <div className="col-md-6 mb-3">
                   <label>Active*</label>
-                  <select
-                    name="active"
-                    onChange={getInputData}
-                    className="form-select"
-                  >
+                  <select name="active"  onChange={getInputData}  className="form-select border-2 border-primary">
                     <option value="true">Yes</option>
                     <option value="false">No</option>
                   </select>
