@@ -70,7 +70,6 @@ export default function SignUp() {
             role: "Buyer",
           };
           // post data   by post method in json database file
-          // post data   by post method in json database file
           response = await fetch("/user", {
             method: "POST",
             headers: {
