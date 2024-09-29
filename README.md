@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Full-Stack Ecommerce Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The application would be split into two parts: a front-end user interface built with React JS and a back-end server built with Node JS and Express JS. The database management would be handled by MongoDB.
+
 
 ## Available Scripts
 
