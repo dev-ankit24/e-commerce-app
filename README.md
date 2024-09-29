@@ -20,7 +20,7 @@ The application would be split into two parts: a front-end user interface built 
 
 ## Tech Stack
 
-**Client:** @emotion/react, @emotion/styled, @hookform/resolvers, @reduxjs/toolkit, @stripe/react-stripe-js, @stripe/stripe-js, @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, bootstrap, , moment, owl.carousel, react, react-bootstrap, react-dom, react-google-recaptcha, react-hook-form, react-icons, react-redux, react-router-dom, react-scripts, react-toastify, redux-persist, slugify, styled-components, web-vitals,
+**Client:** @emotion/react, @emotion/styled, @hookform/resolvers, @reduxjs/toolkit, @stripe/react-stripe-js, @stripe/stripe-js, @testing-library/jest-dom, @testing-library/react, @testing-library/user-event, bootstrap, owl.carousel, react, react-bootstrap, react-dom,  react-hook-form, react-icons, react-redux, react-router-dom, react-scripts, react-toastify, redux-persist, slugify, styled-components,
 
 
 **Server:** 
