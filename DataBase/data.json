@@ -200,7 +200,7 @@
       "finalPrice": 290,
       "discount": 11,
       "stock": "false",
-      "quantity": 291,
+      "quantity": 290,
       "description": "<p>hello&nbsp;&nbsp;</p>",
       "pic": [
         "/products/m3.webp",
@@ -220,7 +220,7 @@
       "finalPrice": 369,
       "discount": 11,
       "stock": true,
-      "quantity": 73,
+      "quantity": 72,
       "description": "<p>hello testf</p>",
       "pic": [
         "/products/m8.webp",
@@ -264,7 +264,7 @@
       "finalPrice": 430,
       "discount": 4,
       "stock": "false",
-      "quantity": 24,
+      "quantity": 21,
       "description": "<p>hello test</p>",
       "pic": [
         "/products/m1.webp"
@@ -337,10 +337,10 @@
       "color": "Red",
       "size": "23",
       "basePrice": 220,
-      "finalPrice": 210,
+      "finalPrice": 209,
       "discount": 5,
       "stock": "false",
-      "quantity": 24,
+      "quantity": 212,
       "description": "<p>hello test</p>",
       "pic": [
         "/products/m6.webp"
@@ -891,7 +891,7 @@
       "finalPrice": 23409,
       "discount": 15,
       "stock": "false",
-      "quantity": 45,
+      "quantity": 44,
       "description": "<p>good led tv</p>",
       "pic": [
         "/products/i19.webp"
@@ -1043,7 +1043,7 @@
       "finalPrice": 237,
       "discount": 5,
       "stock": true,
-      "quantity": 20,
+      "quantity": 19,
       "description": "<p>gppp</p>",
       "pic": [
         "/products/c8.webp"
@@ -1062,7 +1062,7 @@
       "finalPrice": 675,
       "discount": 10,
       "stock": true,
-      "quantity": 12,
+      "quantity": 11,
       "description": "<p>good</p>",
       "pic": [
         "/products/i10.webp"
@@ -1109,6 +1109,26 @@
         "/products/m2.webp"
       ],
       "active": true
+    },
+    {
+      "id": "18a0",
+      "name": "Ankit Kumar",
+      "maincategory": "Male",
+      "subcategory": "Shrit",
+      "brand": "Zara",
+      "color": "black",
+      "size": "12",
+      "basePrice": 1200,
+      "finalPrice": 1104,
+      "discount": 8,
+      "stock": true,
+      "quantity": 119,
+      "description": "",
+      "pic": [
+        "/products/c3.webp",
+        "/products/e4.webp"
+      ],
+      "active": true
     }
   ],
   "testimonial": [
@@ -1144,7 +1164,7 @@
       "id": "013d",
       "name": "Ananya  Pandey",
       "pic": "/testimonials/p5.jfif",
-      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt",
+      "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididuntkk",
       "active": true
     }
   ],
@@ -1152,11 +1172,11 @@
     {
       "name": "Anuj Kumar",
       "phone": "9720165750",
-      "address": "H.No.423, Vill- Chandiyana Rampur , Post- Rampur Chandiyana ,\ntehsil- Atrauli  Dist- Aligarh",
+      "address": "jh jkhjk jkhjk jkhjkh kjhj n",
       "city": "Aligarh",
       "pin": "202133",
       "state": "Uttar Pradesh",
-      "pic": "/products/anuj.jpg",
+      "pic": "/products/m4.webp",
       "id": "ae18",
       "username": "Anuj",
       "email": "abc@gmail.com",
@@ -1176,21 +1196,23 @@
       "email": "ankitkumar839282@gmail.com",
       "password": "Ankit@123",
       "role": "Admin"
-    }
-  ],
-  "wishlist": [
+    },
     {
-      "id": "66e7",
-      "user": "ae18",
-      "name": "Samsung F30A",
-      "product": "bf75",
-      "brand": "samsung",
-      "color": "SILVER",
-      "size": "14.25m",
-      "pic": "/products/i14.webp",
-      "price": 15435
+      "name": "Ankit Kumar",
+      "phone": "08392823395",
+      "address": "423, Rampur Chandiyana",
+      "city": "Aligarh",
+      "pin": "202133",
+      "state": "Uttar Pradesh",
+      "pic": "/products/m5.webp",
+      "id": "6e67",
+      "username": "aman",
+      "email": "fdjksfk@gmail.com",
+      "password": "Aman@123",
+      "role": "Buyer"
     }
   ],
+  "wishlist": [],
   "checkout": [
     {
       "id": "12dc",
@@ -1249,9 +1271,9 @@
     {
       "id": "01d1",
       "user": "ae18",
-      "oderStatus": "Order is Placed",
+      "oderStatus": "Order to Ship",
       "paymentMode": "COD",
-      "paymentStatus": "Pending",
+      "paymentStatus": "Payment Done",
       "subtotal": 290,
       "shipping": 60,
       "total": 350,
@@ -2265,6 +2287,195 @@
         }
       ],
       "date": "2024-07-08T13:11:35.542Z"
+    },
+    {
+      "id": "9352",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 1290,
+      "shipping": 0,
+      "total": 1290,
+      "products": [
+        {
+          "id": "acf9",
+          "user": "ae18",
+          "name": "Shirt For boy ",
+          "product": "2",
+          "brand": "Nike",
+          "color": "White",
+          "size": "23",
+          "pic": "/products/m1.webp",
+          "price": 430,
+          "qty": 3,
+          "stockQuantity": 24,
+          "total": 1290
+        }
+      ],
+      "date": "2025-06-15T07:28:52.446Z"
+    },
+    {
+      "id": "2822",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 675,
+      "shipping": 60,
+      "total": 735,
+      "products": [
+        {
+          "id": "6f72",
+          "user": "ae18",
+          "name": "Shirt for men",
+          "product": "1c3f",
+          "brand": "Zara",
+          "color": "white black",
+          "size": "2xl",
+          "pic": "/products/i10.webp",
+          "price": 675,
+          "qty": 1,
+          "stockQuantity": 12,
+          "total": 675
+        }
+      ],
+      "date": "2025-06-15T07:39:15.334Z"
+    },
+    {
+      "id": "1f5a",
+      "user": "ae18",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 237,
+      "shipping": 60,
+      "total": 297,
+      "products": [
+        {
+          "id": "3074",
+          "user": "ae18",
+          "name": "Plaza for women And Girls",
+          "product": "e10c",
+          "brand": "Zara",
+          "color": "green",
+          "size": "32",
+          "pic": "/products/c8.webp",
+          "price": 237,
+          "qty": 1,
+          "stockQuantity": 20,
+          "total": 237
+        }
+      ],
+      "date": "2025-06-15T07:44:00.094Z"
+    },
+    {
+      "id": "d20c",
+      "user": "6e67",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 290,
+      "shipping": 60,
+      "total": 350,
+      "products": [
+        {
+          "id": "f546",
+          "user": "6e67",
+          "name": "Male Jeans for boy",
+          "product": "6424",
+          "brand": "Nike",
+          "color": "black ",
+          "size": "32",
+          "pic": "/products/m3.webp",
+          "price": 290,
+          "qty": 1,
+          "stockQuantity": 291,
+          "total": 290
+        }
+      ],
+      "date": "2025-06-15T09:27:03.685Z"
+    },
+    {
+      "id": "54a5",
+      "user": "6e67",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 369,
+      "shipping": 60,
+      "total": 429,
+      "products": [
+        {
+          "id": "a482",
+          "user": "6e67",
+          "name": "T-Shirt For boy",
+          "product": "14f2",
+          "brand": "Adidas",
+          "color": "purpule",
+          "size": "2xl",
+          "pic": "/products/m8.webp",
+          "price": 369,
+          "qty": 1,
+          "stockQuantity": 73,
+          "total": 369
+        }
+      ],
+      "date": "2025-06-15T09:28:09.129Z"
+    },
+    {
+      "id": "d175",
+      "user": "6e67",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 1104,
+      "shipping": 0,
+      "total": 1104,
+      "products": [
+        {
+          "id": "c5e2",
+          "user": "6e67",
+          "name": "Ankit Kumar",
+          "product": "18a0",
+          "brand": "Zara",
+          "color": "black",
+          "size": "12",
+          "pic": "/products/c3.webp",
+          "price": 1104,
+          "qty": 1,
+          "stockQuantity": 120,
+          "total": 1104
+        }
+      ],
+      "date": "2025-06-15T09:31:58.001Z"
+    },
+    {
+      "id": "d717",
+      "user": "6e67",
+      "oderStatus": "Order is Placed",
+      "paymentMode": "COD",
+      "paymentStatus": "Pending",
+      "subtotal": 23409,
+      "shipping": 0,
+      "total": 23409,
+      "products": [
+        {
+          "id": "040d",
+          "user": "6e67",
+          "name": "Samsung Smart TV LED",
+          "product": "a234",
+          "brand": "samsung",
+          "color": "black",
+          "size": "32",
+          "pic": "/products/i19.webp",
+          "price": 23409,
+          "qty": 1,
+          "stockQuantity": 45,
+          "total": 23409
+        }
+      ],
+      "date": "2025-06-15T10:32:48.119Z"
     }
   ],
   "newsletter": [
@@ -2277,6 +2488,11 @@
       "id": "aca4",
       "email": "abvc@gamil.com",
       "active": false
+    },
+    {
+      "id": "1fa1",
+      "email": "ankitkumar839282@gmail.com",
+      "active": true
     }
   ],
   "contact": [
@@ -2311,5 +2527,20 @@
       "active": true
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "e8bd",
+      "user": "682997aade52701e0af53849",
+      "name": "Male shirt  and boy",
+      "product": "f457",
+      "brand": "Nike",
+      "color": "white",
+      "size": "Xl",
+      "pic": "/products/m7.webp",
+      "price": 445,
+      "qty": 3,
+      "stockQuantity": 45,
+      "total": 1335
+    }
+  ]
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FormValidation from './Validators/FormValidation'
 import { Link, useNavigate } from 'react-router-dom'
+import toast from 'react-hot-toast'
 export default function Login(){
   let [data,setData]=useState({
     username:"",
@@ -51,6 +52,7 @@ async function postData(e){
                 if(item.role==="Admin")
                     navigate("/admin")
                 else
+                   toast.success("Login Successfully")
                     navigate("/profile")
 
             }               
@@ -94,7 +96,7 @@ async function postData(e){
 
                 </form>
                 <div className='d-flex justify-content-between'>
-                    <Link to='#'>Forget Password </Link>
+                    {/* <Link to='#'>Forget Password </Link> */}
                     <Link to='/signup'>Doen't  Have an Account?Create </Link>
                 </div>
             </div>

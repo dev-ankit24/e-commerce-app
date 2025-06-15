@@ -6,6 +6,7 @@ import { updateProductQuantity } from '../Store/ActionCreators/ProductActionCrea
 import {createCheckout} from "../Store/ActionCreators/CheckoutActionCreators"
 import { Link, useNavigate } from 'react-router-dom'
 import ProfileTable from './Partials/ProfileTable'
+import toast from 'react-hot-toast'
 
 
     export default function Checkout() {
@@ -46,7 +47,7 @@ import ProfileTable from './Partials/ProfileTable'
             dispatch(deleteCart({id:item.id}))
 
         }
-
+        toast.success("Your  Order Has Been Confirmed")
         navigate("/confirmation")
     }
     
@@ -174,7 +175,7 @@ useEffect(()=>{
         
             </>:<>
             <div  className='text-center text-danger mx-5'>
-                  <h4>  Sorry !!  You Have No Item in Your Cart  </h4>              
+                  <h4> Sorry !!  You Have No Item in Your Cart  </h4>              
                  <Link to='/shop' className='btn bg-warning text-dark p-2 '>Shop Now</Link>
             </div>
             </>

@@ -57,19 +57,23 @@ function Profile() {
         })()
     },[WishlistStateData.length])
 
-    // get checkout and check condition
-    useEffect(()=>{
-        (()=>{
-            dispatch(getCheckout())
-        if(CheckoutStateData.length)
-            console.log(CheckoutStateData)
-            setOrders(CheckoutStateData.filter((x)=>x.user===localStorage.getItem("userid")))
-    
-            
-        })()
-    },[CheckoutStateData.length])
+// 1. Dispatch checkout data once
+// Get data only once on component mount
+useEffect(() => {
+    dispatch(getCheckout())  // API call karega
+}, [])
 
- 
+// Filter user orders only when data update ho Redux me
+useEffect(() => {
+    const userId = localStorage.getItem("userid")
+    if (CheckoutStateData.length && userId) {
+        const userOrders = CheckoutStateData.filter(x => x.user === userId)
+        setOrders(userOrders)
+        console.log(userOrders);
+        
+    }
+}, [CheckoutStateData]) // NOTE: Array me poora CheckoutStateData
+
     
     return (
              <>
@@ -80,7 +84,7 @@ function Profile() {
                         {
                             user.pic?
                             <img src={user.pic} alt="user-image" height={400} width="100%"  /> :
-                            <img src="/img/anuj.jpg" alt="user-image" width="100%" height={400} style={{borderRadius:"10%"}} srcset="" />
+                            <img src="/img/user.jpg" alt="user-image" width={"60%"} height={300} style={{borderRadius:"10%"}} srcset="" />
                         }
                     </div>
                     <div className="col-md-6">

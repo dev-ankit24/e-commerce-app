@@ -14,6 +14,16 @@ export default function Cart() {
     let dispatch =useDispatch()
     let CartStateData =useSelector((state)=>state.CartStateData)
 
+        useEffect(() => {
+        dispatch(getCart())
+    }, [])
+
+    // ✅ Recalculate data when CartStateData updates
+    useEffect(() => {
+        getAPIData()
+    }, [CartStateData])
+
+
      // Delete Product from Wishlist Table
      function deleteData(id) {
         if (window.confirm("You Are Sure to Remove Product from Cart : ")) {
@@ -44,42 +54,68 @@ export default function Cart() {
     }
    
     // Get Card data  and Calcutale shiiping Price , Total price
-    function getAPIData(){
-        dispatch(getCart())
-        if(CartStateData.length){
-            let data=CartStateData.filter((x)=>x.user===localStorage.getItem("userid"))
-            setCart(data)
-            let sum=0
-            for(let item of data){
-                sum=sum+item.total
-            }
-            setSubtotal(sum)
-            if(sum>0 && sum<1000){
-                setShipping(60)
-                setTotal(sum+60)
-            }  
-            else {
-                setTotal(sum)
-                setShipping(0)  
-            }
+    // function getAPIData(){
+    //     dispatch(getCart())
+    //     if(CartStateData.length){
+    //         let data=CartStateData.filter((x)=>x.user===localStorage.getItem("userid"))
+    //         setCart(data)
+    //         let sum=0
+    //         for(let item of data){
+    //             sum=sum+item.total
+    //         }
+    //         setSubtotal(sum)
+    //         if(sum>0 && sum<1000){
+    //             setShipping(60)
+    //             setTotal(sum+60)
+    //             console.log(total);
+                
+    //         }  
+    //         else {
+    //             setTotal(sum)
+    //             console.log(total,"else");
+                
+    //             setShipping(0)  
+    //         }
             
-        }
+    //     }
             
-        else
-        setCart([])
+    //     else
+    //     setCart([])
+    // }
+    function getAPIData() {
+  if (CartStateData.length) {
+    const userId = localStorage.getItem("userid");
+    let data = CartStateData.filter(x => x.user === userId);
+    setCart(data);
+
+    let sum = 0;
+    for (let item of data) {
+      sum += item.total;
     }
-    useEffect(()=>{
-        (()=>{
-            getAPIData()
-        })()
-    },[CartStateData.length])
+    setSubtotal(sum);
+
+    const shipping = (sum > 0 && sum < 1000) ? 60 : 0;
+    setShipping(shipping);
+    setTotal(sum + shipping);
+  } else {
+    setCart([]);
+    setSubtotal(0);
+    setShipping(0);
+    setTotal(0);
+  }
+}
+
+
 
   return (
     <>
     <div className="container-fluid my-3">
         <h5 className='text-center bg bg-warning p-2'><i>Cart Section</i></h5>
     {
-                cart.length?
+       
+       
+       
+       cart.length?
                     <>
                     <div className="table-responsive">
                         <table className='table table-bordered border-primary'>
@@ -99,7 +135,7 @@ export default function Cart() {
                             </thead>
                             <tbody>
                                {
-                                cart.map((item, index)=>{
+                                cart?.map((item, index)=>{
                                     return( <tr key={index}>
                                         <td><a href={item.pic} target='_blank'>
                                            <img src={item.pic} alt="item image" width={50} height={50}/>

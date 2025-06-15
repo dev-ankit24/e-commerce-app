@@ -47,10 +47,12 @@ import AdminContactUs from "./Admin/ContactUs/AdminContactUs";
 import AdminContactUsShow from "./Admin/ContactUs/AdminContactUsShow";
 import AdminCheckout from "./Admin/CheckOut/AdminCheckout";
 import AdminCheckoutShow from "./Admin/CheckOut/AdminCheckoutShow";
+import { Toaster } from "react-hot-toast";
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Toaster position="top-right" />
         <Navbar />
             <Routes>
               {/* Public routes. */}

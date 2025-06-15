@@ -74,7 +74,9 @@ export default function AdminUpdateProduct() {
     // console.log(errorMassage, data);
     let error= Object.values(errorMassage).find((x)=>x.length >0)
     if (error) {
+      console.log(error);
       setShow(true);
+      
     }
     // data get and check name
     // let response=await fetch('http://localhost:8000/Product',{
@@ -91,6 +93,8 @@ export default function AdminUpdateProduct() {
       
       // data post (save) in json database
       else{
+        console.log(data);
+        
         dispatch(updateProduct({ 
           ...data ,
           // form not select data  brand , mainacategory , subcategory etc 
@@ -101,7 +105,7 @@ export default function AdminUpdateProduct() {
         discount:parseInt(data.discount),
         finalPrice:parseInt(data.basePrice - data.basePrice* data.discount /100),
         quantity:parseInt(data.quantity),
-        description: rte.getHTMLCode()
+        description: rte.getHTMLCode() ,
         }))
         navigate("/admin/product");
          //**********    ********** */
